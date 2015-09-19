@@ -1,0 +1,616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC9545C91BA8A60F008AAF61 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9545C81BA8A60F008AAF61 /* main.m */; };
+		FC9545CC1BA8A60F008AAF61 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9545CB1BA8A60F008AAF61 /* AppDelegate.m */; };
+		FC9545D41BA8A60F008AAF61 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC9545D31BA8A60F008AAF61 /* Images.xcassets */; };
+		FC9545E31BA8A60F008AAF61 /* ChildrenBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9545E21BA8A60F008AAF61 /* ChildrenBookTests.m */; };
+		FC9545EF1BA8AC75008AAF61 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9545ED1BA8AC75008AAF61 /* HomeViewController.m */; };
+		FC9545F01BA8AC75008AAF61 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC9545EE1BA8AC75008AAF61 /* HomeViewController.xib */; };
+		FC9545F31BA8B869008AAF61 /* bkg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FC9545F21BA8B869008AAF61 /* bkg.jpg */; };
+		FC9545F41BA8B880008AAF61 /* bkg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FC9545F21BA8B869008AAF61 /* bkg.jpg */; };
+		FC9545F81BA8F631008AAF61 /* SelectThemeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9545F61BA8F631008AAF61 /* SelectThemeViewController.m */; };
+		FC9545F91BA8F631008AAF61 /* SelectThemeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC9545F71BA8F631008AAF61 /* SelectThemeViewController.xib */; };
+		FC9545FE1BAAF16F008AAF61 /* DragableClipart.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9545FD1BAAF16F008AAF61 /* DragableClipart.m */; };
+		FC9546031BAB0565008AAF61 /* PageCreatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9546011BAB0565008AAF61 /* PageCreatorViewController.m */; };
+		FC9546041BAB0565008AAF61 /* PageCreatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC9546021BAB0565008AAF61 /* PageCreatorViewController.xib */; };
+		FC9546071BAB5CBB008AAF61 /* PathHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9546061BAB5CBB008AAF61 /* PathHelper.m */; };
+		FC95460B1BAB85C6008AAF61 /* FontStyleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9546091BAB85C6008AAF61 /* FontStyleViewController.m */; };
+		FC95460C1BAB85C6008AAF61 /* FontStyleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC95460A1BAB85C6008AAF61 /* FontStyleViewController.xib */; };
+		FC9546C21BAB9E76008AAF61 /* DRColorPicker+UIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9546A01BAB9E76008AAF61 /* DRColorPicker+UIColor.m */; };
+		FC9546C31BAB9E76008AAF61 /* DRColorPicker.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FC9546A11BAB9E76008AAF61 /* DRColorPicker.bundle */; };
+		FC9546C41BAB9E76008AAF61 /* DRColorPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9546A31BAB9E76008AAF61 /* DRColorPicker.m */; };
+		FC9546C51BAB9E76008AAF61 /* DRColorPickerBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9546A51BAB9E76008AAF61 /* DRColorPickerBaseViewController.m */; };
+		FC9546C61BAB9E76008AAF61 /* DRColorPickerColor.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9546A71BAB9E76008AAF61 /* DRColorPickerColor.m */; };
+		FC9546C71BAB9E76008AAF61 /* DRColorPickerColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9546A91BAB9E76008AAF61 /* DRColorPickerColorView.m */; };
+		FC9546C81BAB9E76008AAF61 /* DRColorPickerGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9546AB1BAB9E76008AAF61 /* DRColorPickerGridView.m */; };
+		FC9546C91BAB9E76008AAF61 /* DRColorPickerGridViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9546AD1BAB9E76008AAF61 /* DRColorPickerGridViewCell.m */; };
+		FC9546CA1BAB9E76008AAF61 /* DRColorPickerGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9546AF1BAB9E76008AAF61 /* DRColorPickerGridViewController.m */; };
+		FC9546CB1BAB9E76008AAF61 /* DRColorPickerHomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9546B11BAB9E76008AAF61 /* DRColorPickerHomeView.m */; };
+		FC9546CC1BAB9E76008AAF61 /* DRColorPickerHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9546B31BAB9E76008AAF61 /* DRColorPickerHomeViewController.m */; };
+		FC9546CD1BAB9E76008AAF61 /* DRColorPickerHorizontalCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9546B51BAB9E76008AAF61 /* DRColorPickerHorizontalCollectionViewLayout.m */; };
+		FC9546CE1BAB9E76008AAF61 /* DRColorPickerHueView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9546B71BAB9E76008AAF61 /* DRColorPickerHueView.m */; };
+		FC9546CF1BAB9E76008AAF61 /* DRColorPickerHueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9546B91BAB9E76008AAF61 /* DRColorPickerHueViewController.m */; };
+		FC9546D01BAB9E76008AAF61 /* DRColorPickerStore.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9546BB1BAB9E76008AAF61 /* DRColorPickerStore.m */; };
+		FC9546D11BAB9E76008AAF61 /* DRColorPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9546BD1BAB9E76008AAF61 /* DRColorPickerViewController.m */; };
+		FC9546D21BAB9E76008AAF61 /* DRColorPickerWheelView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9546BF1BAB9E76008AAF61 /* DRColorPickerWheelView.m */; };
+		FC9546D31BAB9E76008AAF61 /* DRColorPickerWheelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9546C11BAB9E76008AAF61 /* DRColorPickerWheelViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FC9545DD1BA8A60F008AAF61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC9545BB1BA8A60F008AAF61 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC9545C21BA8A60F008AAF61;
+			remoteInfo = ChildrenBook;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FC9545C31BA8A60F008AAF61 /* ChildrenBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChildrenBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC9545C71BA8A60F008AAF61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC9545C81BA8A60F008AAF61 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FC9545CA1BA8A60F008AAF61 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FC9545CB1BA8A60F008AAF61 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FC9545D31BA8A60F008AAF61 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FC9545DC1BA8A60F008AAF61 /* ChildrenBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChildrenBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC9545E11BA8A60F008AAF61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC9545E21BA8A60F008AAF61 /* ChildrenBookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChildrenBookTests.m; sourceTree = "<group>"; };
+		FC9545EC1BA8AC75008AAF61 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		FC9545ED1BA8AC75008AAF61 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		FC9545EE1BA8AC75008AAF61 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		FC9545F21BA8B869008AAF61 /* bkg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bkg.jpg; sourceTree = "<group>"; };
+		FC9545F51BA8F631008AAF61 /* SelectThemeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectThemeViewController.h; sourceTree = "<group>"; };
+		FC9545F61BA8F631008AAF61 /* SelectThemeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectThemeViewController.m; sourceTree = "<group>"; };
+		FC9545F71BA8F631008AAF61 /* SelectThemeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectThemeViewController.xib; sourceTree = "<group>"; };
+		FC9545FB1BAA6980008AAF61 /* ChildrenBookConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChildrenBookConstants.h; sourceTree = "<group>"; };
+		FC9545FC1BAAF16F008AAF61 /* DragableClipart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragableClipart.h; sourceTree = "<group>"; };
+		FC9545FD1BAAF16F008AAF61 /* DragableClipart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragableClipart.m; sourceTree = "<group>"; };
+		FC9546001BAB0565008AAF61 /* PageCreatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageCreatorViewController.h; sourceTree = "<group>"; };
+		FC9546011BAB0565008AAF61 /* PageCreatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageCreatorViewController.m; sourceTree = "<group>"; };
+		FC9546021BAB0565008AAF61 /* PageCreatorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PageCreatorViewController.xib; sourceTree = "<group>"; };
+		FC9546051BAB5CBB008AAF61 /* PathHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PathHelper.h; sourceTree = "<group>"; };
+		FC9546061BAB5CBB008AAF61 /* PathHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PathHelper.m; sourceTree = "<group>"; };
+		FC9546081BAB85C6008AAF61 /* FontStyleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontStyleViewController.h; sourceTree = "<group>"; };
+		FC9546091BAB85C6008AAF61 /* FontStyleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontStyleViewController.m; sourceTree = "<group>"; };
+		FC95460A1BAB85C6008AAF61 /* FontStyleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FontStyleViewController.xib; sourceTree = "<group>"; };
+		FC95469F1BAB9E76008AAF61 /* DRColorPicker+UIColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DRColorPicker+UIColor.h"; sourceTree = "<group>"; };
+		FC9546A01BAB9E76008AAF61 /* DRColorPicker+UIColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DRColorPicker+UIColor.m"; sourceTree = "<group>"; };
+		FC9546A11BAB9E76008AAF61 /* DRColorPicker.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DRColorPicker.bundle; sourceTree = "<group>"; };
+		FC9546A21BAB9E76008AAF61 /* DRColorPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRColorPicker.h; sourceTree = "<group>"; };
+		FC9546A31BAB9E76008AAF61 /* DRColorPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRColorPicker.m; sourceTree = "<group>"; };
+		FC9546A41BAB9E76008AAF61 /* DRColorPickerBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRColorPickerBaseViewController.h; sourceTree = "<group>"; };
+		FC9546A51BAB9E76008AAF61 /* DRColorPickerBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRColorPickerBaseViewController.m; sourceTree = "<group>"; };
+		FC9546A61BAB9E76008AAF61 /* DRColorPickerColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRColorPickerColor.h; sourceTree = "<group>"; };
+		FC9546A71BAB9E76008AAF61 /* DRColorPickerColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRColorPickerColor.m; sourceTree = "<group>"; };
+		FC9546A81BAB9E76008AAF61 /* DRColorPickerColorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRColorPickerColorView.h; sourceTree = "<group>"; };
+		FC9546A91BAB9E76008AAF61 /* DRColorPickerColorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRColorPickerColorView.m; sourceTree = "<group>"; };
+		FC9546AA1BAB9E76008AAF61 /* DRColorPickerGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRColorPickerGridView.h; sourceTree = "<group>"; };
+		FC9546AB1BAB9E76008AAF61 /* DRColorPickerGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRColorPickerGridView.m; sourceTree = "<group>"; };
+		FC9546AC1BAB9E76008AAF61 /* DRColorPickerGridViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRColorPickerGridViewCell.h; sourceTree = "<group>"; };
+		FC9546AD1BAB9E76008AAF61 /* DRColorPickerGridViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRColorPickerGridViewCell.m; sourceTree = "<group>"; };
+		FC9546AE1BAB9E76008AAF61 /* DRColorPickerGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRColorPickerGridViewController.h; sourceTree = "<group>"; };
+		FC9546AF1BAB9E76008AAF61 /* DRColorPickerGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRColorPickerGridViewController.m; sourceTree = "<group>"; };
+		FC9546B01BAB9E76008AAF61 /* DRColorPickerHomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRColorPickerHomeView.h; sourceTree = "<group>"; };
+		FC9546B11BAB9E76008AAF61 /* DRColorPickerHomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRColorPickerHomeView.m; sourceTree = "<group>"; };
+		FC9546B21BAB9E76008AAF61 /* DRColorPickerHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRColorPickerHomeViewController.h; sourceTree = "<group>"; };
+		FC9546B31BAB9E76008AAF61 /* DRColorPickerHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRColorPickerHomeViewController.m; sourceTree = "<group>"; };
+		FC9546B41BAB9E76008AAF61 /* DRColorPickerHorizontalCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRColorPickerHorizontalCollectionViewLayout.h; sourceTree = "<group>"; };
+		FC9546B51BAB9E76008AAF61 /* DRColorPickerHorizontalCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRColorPickerHorizontalCollectionViewLayout.m; sourceTree = "<group>"; };
+		FC9546B61BAB9E76008AAF61 /* DRColorPickerHueView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRColorPickerHueView.h; sourceTree = "<group>"; };
+		FC9546B71BAB9E76008AAF61 /* DRColorPickerHueView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRColorPickerHueView.m; sourceTree = "<group>"; };
+		FC9546B81BAB9E76008AAF61 /* DRColorPickerHueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRColorPickerHueViewController.h; sourceTree = "<group>"; };
+		FC9546B91BAB9E76008AAF61 /* DRColorPickerHueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRColorPickerHueViewController.m; sourceTree = "<group>"; };
+		FC9546BA1BAB9E76008AAF61 /* DRColorPickerStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRColorPickerStore.h; sourceTree = "<group>"; };
+		FC9546BB1BAB9E76008AAF61 /* DRColorPickerStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRColorPickerStore.m; sourceTree = "<group>"; };
+		FC9546BC1BAB9E76008AAF61 /* DRColorPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRColorPickerViewController.h; sourceTree = "<group>"; };
+		FC9546BD1BAB9E76008AAF61 /* DRColorPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRColorPickerViewController.m; sourceTree = "<group>"; };
+		FC9546BE1BAB9E76008AAF61 /* DRColorPickerWheelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRColorPickerWheelView.h; sourceTree = "<group>"; };
+		FC9546BF1BAB9E76008AAF61 /* DRColorPickerWheelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRColorPickerWheelView.m; sourceTree = "<group>"; };
+		FC9546C01BAB9E76008AAF61 /* DRColorPickerWheelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRColorPickerWheelViewController.h; sourceTree = "<group>"; };
+		FC9546C11BAB9E76008AAF61 /* DRColorPickerWheelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRColorPickerWheelViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC9545C01BA8A60F008AAF61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC9545D91BA8A60F008AAF61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC9545BA1BA8A60F008AAF61 = {
+			isa = PBXGroup;
+			children = (
+				FC9545C51BA8A60F008AAF61 /* ChildrenBook */,
+				FC9545DF1BA8A60F008AAF61 /* ChildrenBookTests */,
+				FC9545C41BA8A60F008AAF61 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FC9545C41BA8A60F008AAF61 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC9545C31BA8A60F008AAF61 /* ChildrenBook.app */,
+				FC9545DC1BA8A60F008AAF61 /* ChildrenBookTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC9545C51BA8A60F008AAF61 /* ChildrenBook */ = {
+			isa = PBXGroup;
+			children = (
+				FC95469E1BAB9E76008AAF61 /* DRColorPicker */,
+				FC9545FF1BAAF178008AAF61 /* Control SubClass */,
+				FC9545FA1BA8F652008AAF61 /* Create */,
+				FC9545CA1BA8A60F008AAF61 /* AppDelegate.h */,
+				FC9545CB1BA8A60F008AAF61 /* AppDelegate.m */,
+				FC9545D31BA8A60F008AAF61 /* Images.xcassets */,
+				FC9545EC1BA8AC75008AAF61 /* HomeViewController.h */,
+				FC9545ED1BA8AC75008AAF61 /* HomeViewController.m */,
+				FC9545EE1BA8AC75008AAF61 /* HomeViewController.xib */,
+				FC9545C61BA8A60F008AAF61 /* Supporting Files */,
+				FC9545FB1BAA6980008AAF61 /* ChildrenBookConstants.h */,
+				FC9546051BAB5CBB008AAF61 /* PathHelper.h */,
+				FC9546061BAB5CBB008AAF61 /* PathHelper.m */,
+			);
+			path = ChildrenBook;
+			sourceTree = "<group>";
+		};
+		FC9545C61BA8A60F008AAF61 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC9545C71BA8A60F008AAF61 /* Info.plist */,
+				FC9545C81BA8A60F008AAF61 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FC9545DF1BA8A60F008AAF61 /* ChildrenBookTests */ = {
+			isa = PBXGroup;
+			children = (
+				FC9545E21BA8A60F008AAF61 /* ChildrenBookTests.m */,
+				FC9545E01BA8A60F008AAF61 /* Supporting Files */,
+			);
+			path = ChildrenBookTests;
+			sourceTree = "<group>";
+		};
+		FC9545E01BA8A60F008AAF61 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC9545F11BA8B869008AAF61 /* Images */,
+				FC9545E11BA8A60F008AAF61 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FC9545F11BA8B869008AAF61 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				FC9545F21BA8B869008AAF61 /* bkg.jpg */,
+			);
+			path = Images;
+			sourceTree = SOURCE_ROOT;
+		};
+		FC9545FA1BA8F652008AAF61 /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				FC9546081BAB85C6008AAF61 /* FontStyleViewController.h */,
+				FC9546091BAB85C6008AAF61 /* FontStyleViewController.m */,
+				FC95460A1BAB85C6008AAF61 /* FontStyleViewController.xib */,
+				FC9545F51BA8F631008AAF61 /* SelectThemeViewController.h */,
+				FC9545F61BA8F631008AAF61 /* SelectThemeViewController.m */,
+				FC9545F71BA8F631008AAF61 /* SelectThemeViewController.xib */,
+				FC9546001BAB0565008AAF61 /* PageCreatorViewController.h */,
+				FC9546011BAB0565008AAF61 /* PageCreatorViewController.m */,
+				FC9546021BAB0565008AAF61 /* PageCreatorViewController.xib */,
+			);
+			name = Create;
+			sourceTree = "<group>";
+		};
+		FC9545FF1BAAF178008AAF61 /* Control SubClass */ = {
+			isa = PBXGroup;
+			children = (
+				FC9545FC1BAAF16F008AAF61 /* DragableClipart.h */,
+				FC9545FD1BAAF16F008AAF61 /* DragableClipart.m */,
+			);
+			name = "Control SubClass";
+			sourceTree = "<group>";
+		};
+		FC95469E1BAB9E76008AAF61 /* DRColorPicker */ = {
+			isa = PBXGroup;
+			children = (
+				FC95469F1BAB9E76008AAF61 /* DRColorPicker+UIColor.h */,
+				FC9546A01BAB9E76008AAF61 /* DRColorPicker+UIColor.m */,
+				FC9546A11BAB9E76008AAF61 /* DRColorPicker.bundle */,
+				FC9546A21BAB9E76008AAF61 /* DRColorPicker.h */,
+				FC9546A31BAB9E76008AAF61 /* DRColorPicker.m */,
+				FC9546A41BAB9E76008AAF61 /* DRColorPickerBaseViewController.h */,
+				FC9546A51BAB9E76008AAF61 /* DRColorPickerBaseViewController.m */,
+				FC9546A61BAB9E76008AAF61 /* DRColorPickerColor.h */,
+				FC9546A71BAB9E76008AAF61 /* DRColorPickerColor.m */,
+				FC9546A81BAB9E76008AAF61 /* DRColorPickerColorView.h */,
+				FC9546A91BAB9E76008AAF61 /* DRColorPickerColorView.m */,
+				FC9546AA1BAB9E76008AAF61 /* DRColorPickerGridView.h */,
+				FC9546AB1BAB9E76008AAF61 /* DRColorPickerGridView.m */,
+				FC9546AC1BAB9E76008AAF61 /* DRColorPickerGridViewCell.h */,
+				FC9546AD1BAB9E76008AAF61 /* DRColorPickerGridViewCell.m */,
+				FC9546AE1BAB9E76008AAF61 /* DRColorPickerGridViewController.h */,
+				FC9546AF1BAB9E76008AAF61 /* DRColorPickerGridViewController.m */,
+				FC9546B01BAB9E76008AAF61 /* DRColorPickerHomeView.h */,
+				FC9546B11BAB9E76008AAF61 /* DRColorPickerHomeView.m */,
+				FC9546B21BAB9E76008AAF61 /* DRColorPickerHomeViewController.h */,
+				FC9546B31BAB9E76008AAF61 /* DRColorPickerHomeViewController.m */,
+				FC9546B41BAB9E76008AAF61 /* DRColorPickerHorizontalCollectionViewLayout.h */,
+				FC9546B51BAB9E76008AAF61 /* DRColorPickerHorizontalCollectionViewLayout.m */,
+				FC9546B61BAB9E76008AAF61 /* DRColorPickerHueView.h */,
+				FC9546B71BAB9E76008AAF61 /* DRColorPickerHueView.m */,
+				FC9546B81BAB9E76008AAF61 /* DRColorPickerHueViewController.h */,
+				FC9546B91BAB9E76008AAF61 /* DRColorPickerHueViewController.m */,
+				FC9546BA1BAB9E76008AAF61 /* DRColorPickerStore.h */,
+				FC9546BB1BAB9E76008AAF61 /* DRColorPickerStore.m */,
+				FC9546BC1BAB9E76008AAF61 /* DRColorPickerViewController.h */,
+				FC9546BD1BAB9E76008AAF61 /* DRColorPickerViewController.m */,
+				FC9546BE1BAB9E76008AAF61 /* DRColorPickerWheelView.h */,
+				FC9546BF1BAB9E76008AAF61 /* DRColorPickerWheelView.m */,
+				FC9546C01BAB9E76008AAF61 /* DRColorPickerWheelViewController.h */,
+				FC9546C11BAB9E76008AAF61 /* DRColorPickerWheelViewController.m */,
+			);
+			path = DRColorPicker;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC9545C21BA8A60F008AAF61 /* ChildrenBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC9545E61BA8A60F008AAF61 /* Build configuration list for PBXNativeTarget "ChildrenBook" */;
+			buildPhases = (
+				FC9545BF1BA8A60F008AAF61 /* Sources */,
+				FC9545C01BA8A60F008AAF61 /* Frameworks */,
+				FC9545C11BA8A60F008AAF61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChildrenBook;
+			productName = ChildrenBook;
+			productReference = FC9545C31BA8A60F008AAF61 /* ChildrenBook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FC9545DB1BA8A60F008AAF61 /* ChildrenBookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC9545E91BA8A60F008AAF61 /* Build configuration list for PBXNativeTarget "ChildrenBookTests" */;
+			buildPhases = (
+				FC9545D81BA8A60F008AAF61 /* Sources */,
+				FC9545D91BA8A60F008AAF61 /* Frameworks */,
+				FC9545DA1BA8A60F008AAF61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC9545DE1BA8A60F008AAF61 /* PBXTargetDependency */,
+			);
+			name = ChildrenBookTests;
+			productName = ChildrenBookTests;
+			productReference = FC9545DC1BA8A60F008AAF61 /* ChildrenBookTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC9545BB1BA8A60F008AAF61 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Ivan Cardenas";
+				TargetAttributes = {
+					FC9545C21BA8A60F008AAF61 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 2C9ZE4Z2WN;
+					};
+					FC9545DB1BA8A60F008AAF61 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = FC9545C21BA8A60F008AAF61;
+					};
+				};
+			};
+			buildConfigurationList = FC9545BE1BA8A60F008AAF61 /* Build configuration list for PBXProject "ChildrenBook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC9545BA1BA8A60F008AAF61;
+			productRefGroup = FC9545C41BA8A60F008AAF61 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC9545C21BA8A60F008AAF61 /* ChildrenBook */,
+				FC9545DB1BA8A60F008AAF61 /* ChildrenBookTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC9545C11BA8A60F008AAF61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC9545F91BA8F631008AAF61 /* SelectThemeViewController.xib in Resources */,
+				FC9546C31BAB9E76008AAF61 /* DRColorPicker.bundle in Resources */,
+				FC9545D41BA8A60F008AAF61 /* Images.xcassets in Resources */,
+				FC9545F41BA8B880008AAF61 /* bkg.jpg in Resources */,
+				FC9545F01BA8AC75008AAF61 /* HomeViewController.xib in Resources */,
+				FC9546041BAB0565008AAF61 /* PageCreatorViewController.xib in Resources */,
+				FC95460C1BAB85C6008AAF61 /* FontStyleViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC9545DA1BA8A60F008AAF61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC9545F31BA8B869008AAF61 /* bkg.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC9545BF1BA8A60F008AAF61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC9546C91BAB9E76008AAF61 /* DRColorPickerGridViewCell.m in Sources */,
+				FC9546CE1BAB9E76008AAF61 /* DRColorPickerHueView.m in Sources */,
+				FC9545F81BA8F631008AAF61 /* SelectThemeViewController.m in Sources */,
+				FC9546C61BAB9E76008AAF61 /* DRColorPickerColor.m in Sources */,
+				FC9546C41BAB9E76008AAF61 /* DRColorPicker.m in Sources */,
+				FC9545FE1BAAF16F008AAF61 /* DragableClipart.m in Sources */,
+				FC9546D21BAB9E76008AAF61 /* DRColorPickerWheelView.m in Sources */,
+				FC9546CD1BAB9E76008AAF61 /* DRColorPickerHorizontalCollectionViewLayout.m in Sources */,
+				FC9546031BAB0565008AAF61 /* PageCreatorViewController.m in Sources */,
+				FC95460B1BAB85C6008AAF61 /* FontStyleViewController.m in Sources */,
+				FC9546D01BAB9E76008AAF61 /* DRColorPickerStore.m in Sources */,
+				FC9546C81BAB9E76008AAF61 /* DRColorPickerGridView.m in Sources */,
+				FC9546CB1BAB9E76008AAF61 /* DRColorPickerHomeView.m in Sources */,
+				FC9546CC1BAB9E76008AAF61 /* DRColorPickerHomeViewController.m in Sources */,
+				FC9546D11BAB9E76008AAF61 /* DRColorPickerViewController.m in Sources */,
+				FC9546071BAB5CBB008AAF61 /* PathHelper.m in Sources */,
+				FC9546C51BAB9E76008AAF61 /* DRColorPickerBaseViewController.m in Sources */,
+				FC9546D31BAB9E76008AAF61 /* DRColorPickerWheelViewController.m in Sources */,
+				FC9546CF1BAB9E76008AAF61 /* DRColorPickerHueViewController.m in Sources */,
+				FC9546C21BAB9E76008AAF61 /* DRColorPicker+UIColor.m in Sources */,
+				FC9545CC1BA8A60F008AAF61 /* AppDelegate.m in Sources */,
+				FC9546CA1BAB9E76008AAF61 /* DRColorPickerGridViewController.m in Sources */,
+				FC9545C91BA8A60F008AAF61 /* main.m in Sources */,
+				FC9546C71BAB9E76008AAF61 /* DRColorPickerColorView.m in Sources */,
+				FC9545EF1BA8AC75008AAF61 /* HomeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC9545D81BA8A60F008AAF61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC9545E31BA8A60F008AAF61 /* ChildrenBookTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC9545DE1BA8A60F008AAF61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC9545C21BA8A60F008AAF61 /* ChildrenBook */;
+			targetProxy = FC9545DD1BA8A60F008AAF61 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FC9545E41BA8A60F008AAF61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		FC9545E51BA8A60F008AAF61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC9545E71BA8A60F008AAF61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = ChildrenBook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Data-System-International.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		FC9545E81BA8A60F008AAF61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = ChildrenBook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Data-System-International.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		FC9545EA1BA8A60F008AAF61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ChildrenBookTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Data-System-International.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChildrenBook.app/ChildrenBook";
+			};
+			name = Debug;
+		};
+		FC9545EB1BA8A60F008AAF61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ChildrenBookTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Data-System-International.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChildrenBook.app/ChildrenBook";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC9545BE1BA8A60F008AAF61 /* Build configuration list for PBXProject "ChildrenBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC9545E41BA8A60F008AAF61 /* Debug */,
+				FC9545E51BA8A60F008AAF61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC9545E61BA8A60F008AAF61 /* Build configuration list for PBXNativeTarget "ChildrenBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC9545E71BA8A60F008AAF61 /* Debug */,
+				FC9545E81BA8A60F008AAF61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC9545E91BA8A60F008AAF61 /* Build configuration list for PBXNativeTarget "ChildrenBookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC9545EA1BA8A60F008AAF61 /* Debug */,
+				FC9545EB1BA8A60F008AAF61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC9545BB1BA8A60F008AAF61 /* Project object */;
+}
