@@ -27,8 +27,8 @@
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="loginbox.png" translatesAutoresizingMaskIntoConstraints="NO" id="pBE-zU-fmP">
-                    <rect key="frame" x="668" y="-29" width="375" height="860"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sidebar.png" translatesAutoresizingMaskIntoConstraints="NO" id="pBE-zU-fmP">
+                    <rect key="frame" x="678" y="-29" width="365" height="860"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xzT-1B-4C7">
                     <rect key="frame" x="757" y="726" width="197" height="34"/>
@@ -86,7 +86,7 @@
     </objects>
     <resources>
         <image name="color_line.png" width="128" height="128"/>
-        <image name="loginbox.png" width="409" height="363"/>
+        <image name="sidebar.png" width="254" height="768"/>
         <image name="startbutton.png" width="197" height="34"/>
     </resources>
 </document>

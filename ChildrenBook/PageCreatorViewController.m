@@ -24,15 +24,18 @@
 @property (nonatomic, strong) NSString* manifestFilePath;
 @property (nonatomic, strong) IBOutlet UICollectionView* collectionView;
 @property (nonatomic, strong) IBOutlet UIView* bookPage;
-@property (nonatomic, strong) IBOutlet UILabel* titleLabel;
 @property (nonatomic, strong) IBOutlet UITextField* textArea;
 @property (nonatomic) NSInteger pageNumber;
 @property (nonatomic, strong) UIFont* font;
 @property (nonatomic, strong) UIColor* foregroundColor;
+@property (nonatomic, strong) IBOutlet UIView* sideView;
+@property (nonatomic, strong) IBOutlet UIBarButtonItem* pageView;
+@property (nonatomic, strong) IBOutlet UIBarButtonItem* hideAction;
+@property (nonatomic, strong) IBOutlet UIToolbar* toolbar;
 @end
 
 @implementation PageCreatorViewController
-@synthesize dataSource, storyName, storyBookPath, manifestFilePath, collectionView, bookPage, titleLabel, textArea, pageNumber, font, foregroundColor;
+@synthesize dataSource, storyName, storyBookPath, manifestFilePath, collectionView, bookPage, textArea, pageNumber, font, foregroundColor, pageView, hideAction, sideView, toolbar;
 
 - (void)viewDidLoad
 {
@@ -105,7 +108,7 @@
     self.pageNumber = lines.count;
     NSString* labelText = [NSString stringWithFormat:@"Page %lu", (long)self.pageNumber];
     
-    [self.titleLabel setText:labelText];
+    [self.pageView setTitle:labelText];
     
 }
 
@@ -205,7 +208,7 @@
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    NSString* imageFolder = [self.storyBookPath stringByAppendingPathComponent:self.titleLabel.text];
+    NSString* imageFolder = [self.storyBookPath stringByAppendingPathComponent:self.pageView.title];
     
     NSFileManager* fileManager = [NSFileManager defaultManager];
     BOOL isDir = YES;
@@ -221,7 +224,7 @@
 
 - (void)updateManifest
 {
-    NSString* lineToAdd = [NSString stringWithFormat:@"%@\r\n",self.titleLabel.text];
+    NSString* lineToAdd = [NSString stringWithFormat:@"%@\r\n",self.pageView.title];
     NSFileHandle *fileHandle = [NSFileHandle fileHandleForWritingAtPath:self.manifestFilePath];
     [fileHandle seekToEndOfFile];
     [fileHandle writeData:[lineToAdd dataUsingEncoding:NSStringEncodingConversionAllowLossy]];
@@ -342,7 +345,7 @@
     
     [[UIBarButtonItem appearanceWhenContainedIn:[STPopupNavigationBar class], nil] setTitleTextAttributes:@{ NSFontAttributeName:[UIFont fontWithName:@"Cochin" size:17] } forState:UIControlStateNormal];
     
-    NSString* imageFolder = [self.storyBookPath stringByAppendingPathComponent:self.titleLabel.text];
+    NSString* imageFolder = [self.storyBookPath stringByAppendingPathComponent:self.pageView.title];
     audioRecord* ad = [[audioRecord alloc] initWithPath:imageFolder];
     
     [self showPopupWithTransitionStyle:STPopupTransitionStyleSlideVertical rootViewController:ad];
@@ -363,6 +366,22 @@
 
     HomeViewController* homeViewController = [[HomeViewController alloc] initWithNibName:@"HomeViewController" bundle:nil];
     [self.navigationController pushViewController:homeViewController animated:YES];
+}
+
+- (IBAction)hideAndShowView:(id)sender
+{
+    if ([self.hideAction.title isEqualToString:@"Hide"])
+    {
+        [self.hideAction setTitle:@"Show"];
+        [self.sideView setHidden:YES];
+        [self.toolbar setHidden:YES];
+    }
+    else
+    {
+        [self.hideAction setTitle:@"Hide"];
+        [self.sideView setHidden:NO];
+        [self.toolbar setHidden:NO];
+    }
 }
 
 @end

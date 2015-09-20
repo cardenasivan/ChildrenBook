@@ -85,6 +85,13 @@
 		FCBC457A1BAE362C00EA7399 /* loginscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = FCBC45781BAE362C00EA7399 /* loginscreen.png */; settings = {ASSET_TAGS = (); }; };
 		FCEB36D81BAE767600F85AFB /* BookPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCEB36D61BAE767600F85AFB /* BookPreviewViewController.m */; settings = {ASSET_TAGS = (); }; };
 		FCEB36D91BAE767600F85AFB /* BookPreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCEB36D71BAE767600F85AFB /* BookPreviewViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		FCEB36E11BAE97F100F85AFB /* add-64.png in Resources */ = {isa = PBXBuildFile; fileRef = FCEB36DA1BAE97F100F85AFB /* add-64.png */; settings = {ASSET_TAGS = (); }; };
+		FCEB36E21BAE97F100F85AFB /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = FCEB36DB1BAE97F100F85AFB /* back.png */; settings = {ASSET_TAGS = (); }; };
+		FCEB36E31BAE97F100F85AFB /* draw.png in Resources */ = {isa = PBXBuildFile; fileRef = FCEB36DC1BAE97F100F85AFB /* draw.png */; settings = {ASSET_TAGS = (); }; };
+		FCEB36E41BAE97F100F85AFB /* finish.png in Resources */ = {isa = PBXBuildFile; fileRef = FCEB36DD1BAE97F100F85AFB /* finish.png */; settings = {ASSET_TAGS = (); }; };
+		FCEB36E51BAE97F100F85AFB /* record.png in Resources */ = {isa = PBXBuildFile; fileRef = FCEB36DE1BAE97F100F85AFB /* record.png */; settings = {ASSET_TAGS = (); }; };
+		FCEB36E61BAE97F100F85AFB /* sidebar.png in Resources */ = {isa = PBXBuildFile; fileRef = FCEB36DF1BAE97F100F85AFB /* sidebar.png */; settings = {ASSET_TAGS = (); }; };
+		FCEB36E71BAE97F100F85AFB /* upload-64.png in Resources */ = {isa = PBXBuildFile; fileRef = FCEB36E01BAE97F100F85AFB /* upload-64.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -202,6 +209,13 @@
 		FCEB36D51BAE767600F85AFB /* BookPreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookPreviewViewController.h; sourceTree = "<group>"; };
 		FCEB36D61BAE767600F85AFB /* BookPreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookPreviewViewController.m; sourceTree = "<group>"; };
 		FCEB36D71BAE767600F85AFB /* BookPreviewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookPreviewViewController.xib; sourceTree = "<group>"; };
+		FCEB36DA1BAE97F100F85AFB /* add-64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add-64.png"; sourceTree = "<group>"; };
+		FCEB36DB1BAE97F100F85AFB /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		FCEB36DC1BAE97F100F85AFB /* draw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = draw.png; sourceTree = "<group>"; };
+		FCEB36DD1BAE97F100F85AFB /* finish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = finish.png; sourceTree = "<group>"; };
+		FCEB36DE1BAE97F100F85AFB /* record.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = record.png; sourceTree = "<group>"; };
+		FCEB36DF1BAE97F100F85AFB /* sidebar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sidebar.png; sourceTree = "<group>"; };
+		FCEB36E01BAE97F100F85AFB /* upload-64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "upload-64.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -353,6 +367,13 @@
 		FC9545F11BA8B869008AAF61 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				FCEB36DA1BAE97F100F85AFB /* add-64.png */,
+				FCEB36DB1BAE97F100F85AFB /* back.png */,
+				FCEB36DC1BAE97F100F85AFB /* draw.png */,
+				FCEB36DD1BAE97F100F85AFB /* finish.png */,
+				FCEB36DE1BAE97F100F85AFB /* record.png */,
+				FCEB36DF1BAE97F100F85AFB /* sidebar.png */,
+				FCEB36E01BAE97F100F85AFB /* upload-64.png */,
 				FC898EDB1BAE72670093732A /* view.png */,
 				FC898EA91BAE50450093732A /* bookfontstyle.png */,
 				FCBC45781BAE362C00EA7399 /* loginscreen.png */,
@@ -519,10 +540,13 @@
 			files = (
 				FCBC45041BAE227400EA7399 /* LoginViewController.xib in Resources */,
 				FC38BBFF1BAE205A00389785 /* splashscreen.png in Resources */,
+				FCEB36E31BAE97F100F85AFB /* draw.png in Resources */,
 				709BADDD1BAE435A00C9A6E5 /* ClipartCanvas.xib in Resources */,
 				FC898EAD1BAE56080093732A /* color_line.png in Resources */,
 				709BADD71BAE435100C9A6E5 /* CanvasVC.xib in Resources */,
 				FC38BBFD1BAE203B00389785 /* new.png in Resources */,
+				FCEB36E21BAE97F100F85AFB /* back.png in Resources */,
+				FCEB36E11BAE97F100F85AFB /* add-64.png in Resources */,
 				FC9545F91BA8F631008AAF61 /* SelectThemeViewController.xib in Resources */,
 				FCBC456C1BAE2C3900EA7399 /* bluemixlogin.png in Resources */,
 				FC898EAA1BAE50450093732A /* bookfontstyle.png in Resources */,
@@ -530,12 +554,16 @@
 				FC898EA71BAE4B900093732A /* startbutton.png in Resources */,
 				FC38BBFC1BAE203B00389785 /* edit.png in Resources */,
 				FCBC45661BAE261C00EA7399 /* login.png in Resources */,
+				FCEB36E61BAE97F100F85AFB /* sidebar.png in Resources */,
 				FC898EDC1BAE72670093732A /* view.png in Resources */,
 				FC9545D41BA8A60F008AAF61 /* Images.xcassets in Resources */,
 				FC898EB51BAE5AF40093732A /* audioRecord.xib in Resources */,
 				FCBC45691BAE2C2D00EA7399 /* googlelogin.png in Resources */,
 				FCBC45791BAE362C00EA7399 /* loginscreen.png in Resources */,
 				FCEB36D91BAE767600F85AFB /* BookPreviewViewController.xib in Resources */,
+				FCEB36E51BAE97F100F85AFB /* record.png in Resources */,
+				FCEB36E41BAE97F100F85AFB /* finish.png in Resources */,
+				FCEB36E71BAE97F100F85AFB /* upload-64.png in Resources */,
 				FC9545F01BA8AC75008AAF61 /* HomeViewController.xib in Resources */,
 				FC898EDA1BAE6AAE0093732A /* SelectStoryViewController.xib in Resources */,
 				FCBC456F1BAE2C4300EA7399 /* loginbox.png in Resources */,
