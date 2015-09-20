@@ -16,6 +16,7 @@
 #import "STPopupController.h"
 #import "audioRecord.h"
 #import "HomeViewController.h"
+#import "Page.h"
 
 @interface PageCreatorViewController ()
 @property (nonatomic, strong) NSMutableArray* dataSource;
@@ -222,6 +223,19 @@
     }
     
     NSData* imageData = UIImagePNGRepresentation(image);
+    
+    NSUserDefaults* userDefaults = [NSUserDefaults standardUserDefaults];
+    
+    Page* pageData = [[Page alloc] init];
+    
+    pageData.bookID = [userDefaults objectForKey:kCurrentBookId];
+    pageData.pageID = [[NSUUID UUID] UUIDString];
+    pageData.text = self.textArea.text;
+    pageData.pageNumber = [NSString stringWithFormat: @"%ld", (long)self.pageNumber];
+    pageData.image =imageData;
+    
+    [userDefaults setValue:pageData.pageID forKey:kCurrentPageId];
+    [userDefaults setValue:pageData.image forKey:kCurrentImageData];
     
     [imageData writeToFile:[imageFolder stringByAppendingPathComponent:kPageName] atomically:YES];
 }

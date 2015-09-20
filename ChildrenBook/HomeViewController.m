@@ -10,6 +10,7 @@
 #import "SelectThemeViewController.h"
 #import "ChildrenBookConstants.h"
 #import "SelectStoryViewController.h"
+#import "Book.h"
 
 
 @interface HomeViewController ()
@@ -42,6 +43,16 @@
     [userDefaults setObject:textfield.text forKey:kCurrentStoryName];
     
     SelectThemeViewController* controller = [[SelectThemeViewController alloc] initWithNibName:@"SelectThemeViewController" bundle:nil];
+    Book* bookData = [[Book alloc] init];
+    
+    bookData.title = textfield.text;
+    bookData.bookID = [[NSUUID UUID] UUIDString];
+    bookData.userID = [[NSUUID UUID] UUIDString];
+    
+    [bookData saveProduct:bookData];
+    
+    [userDefaults setValue:bookData.bookID forKey:kCurrentBookId];
+    [userDefaults setValue:bookData.userID forKey:kCurrentUserId];
     
     [self.navigationController pushViewController:controller animated:YES];
     

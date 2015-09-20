@@ -11,6 +11,9 @@
 #import "STPopup.h"
 #import "PathHelper.h"
 #import <AVFoundation/AVFoundation.h>
+#import "Audio.h"
+#import "ChildrenBookConstants.h"
+
 
 @interface audioRecord()
 @property (nonatomic,strong) AVAudioRecorder *recorder;
@@ -92,6 +95,22 @@ int secondsLeft;
 
 - (IBAction)stopBtn_press:(id)sender {
     [_recorder stop];
+    
+    NSUserDefaults* userDefaults = [NSUserDefaults standardUserDefaults];
+    
+    NSData* audioData = [[NSData alloc] initWithContentsOfURL:self.recorder.url];
+    
+    Audio* audioServer = [[Audio alloc] init];
+    
+    audioServer.audioID = [[NSUUID UUID] UUIDString];
+    audioServer.audio = audioData;
+    audioServer.pageID = [userDefaults objectForKey:kCurrentPageId];
+    
+    [userDefaults setValue:audioServer.audioID forKey:kCurrentAudioId];
+    [userDefaults setValue:audioServer.audio forKey:kCurrentAudioData];
+    
+    [audioServer saveProduct:audioServer];
+    
     [self.timer invalidate];
     self.timerLbl.text = @"0.00";
 }
@@ -113,7 +132,8 @@ int secondsLeft;
     [_player play];
 }
 
-- (void) audioRecorderDidFinishRecording:(AVAudioRecorder *)avrecorder successfully:(BOOL)flag{
+- (void) audioRecorderDidFinishRecording:(AVAudioRecorder *)avrecorder successfully:(BOOL)flag
+{
     
 }
 - (void)updateCounter:(NSTimer *)theTimer {

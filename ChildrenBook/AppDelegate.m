@@ -6,6 +6,9 @@
 //  Copyright (c) 2015 Ivan Cardenas. All rights reserved.
 //
 
+#import <IBMFileSync/IBMFileSync.h>
+#import <IBMBluemix/IBMBluemix.h>
+#import <IBMData/IBMData.h>
 #import "AppDelegate.h"
 #import "HomeViewController.h"
 #import "LoginViewController.h"
@@ -30,6 +33,44 @@
     
     [self.window makeKeyAndVisible];
     // Override point for customization after application launch.
+    
+    
+    NSString *applicationId = nil;
+    NSString *applicationSecret = nil;
+    NSString *applicationRoute = nil;
+    
+    BOOL hasValidConfiguration = YES;
+    NSString *errorMessage = @"";
+    
+    NSString *configurationPath = [[NSBundle mainBundle] pathForResource:@"bluelist" ofType:@"plist"];
+    if(configurationPath){
+        NSDictionary *configuration = [[NSDictionary alloc] initWithContentsOfFile:configurationPath];
+        applicationId = [configuration objectForKey:@"applicationId"];
+        if(!applicationId || [applicationId isEqualToString:@""]){
+            hasValidConfiguration = NO;
+            errorMessage = @"Open the bluelist.plist and set the applicationId to the BlueMix applicationId";
+        }
+        applicationSecret = [configuration objectForKey:@"applicationSecret"];
+        if(!applicationSecret || [applicationSecret isEqualToString:@""]){
+            hasValidConfiguration = NO;
+            errorMessage = @"Open the bluelist.plist and set the applicationSecret with your BlueMix application's secret";
+        }
+        applicationRoute = [configuration objectForKey:@"applicationRoute"];
+        if(!applicationRoute || [applicationRoute isEqualToString:@""]){
+            hasValidConfiguration = NO;
+            errorMessage = @"Open the bluelist.plist and set the applicationRoute to the BlueMix application's route";
+        }
+    }
+    
+    if(hasValidConfiguration){
+        // Initialize the SDK and BlueMix services
+        [IBMBluemix initializeWithApplicationId:applicationId andApplicationSecret:applicationSecret andApplicationRoute:applicationRoute];
+        [IBMFileSync initializeService];
+        [IBMData initializeService];
+    }else{
+        [NSException raise:@"InvalidApplicationConfiguration" format: @"%@", errorMessage];
+    }
+    
     return YES;
 }
 

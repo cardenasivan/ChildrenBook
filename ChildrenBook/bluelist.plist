@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationId</key>
+	<string>8a2434a7-4321-497b-8fad-294b18500d6d</string>
+	<key>applicationSecret</key>
+	<string>7084f9332390a1c7cb8b3a3a72410308002b0643</string>
+	<key>applicationRoute</key>
+	<string>http://children-book-builder.mybluemix.net</string>
+</dict>
+</plist>

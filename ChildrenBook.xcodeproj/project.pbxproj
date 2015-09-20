@@ -12,6 +12,17 @@
 		709BADD81BAE435100C9A6E5 /* SmoothedBIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 709BADD51BAE435100C9A6E5 /* SmoothedBIView.m */; settings = {ASSET_TAGS = (); }; };
 		709BADDC1BAE435A00C9A6E5 /* ClipartCanvas.m in Sources */ = {isa = PBXBuildFile; fileRef = 709BADDA1BAE435A00C9A6E5 /* ClipartCanvas.m */; settings = {ASSET_TAGS = (); }; };
 		709BADDD1BAE435A00C9A6E5 /* ClipartCanvas.xib in Resources */ = {isa = PBXBuildFile; fileRef = 709BADDB1BAE435A00C9A6E5 /* ClipartCanvas.xib */; settings = {ASSET_TAGS = (); }; };
+		70DD0F0B1BAEBB2000EC5738 /* IBMBluemix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70DD0F081BAEBB2000EC5738 /* IBMBluemix.framework */; settings = {ASSET_TAGS = (); }; };
+		70DD0F0C1BAEBB2000EC5738 /* IBMData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70DD0F091BAEBB2000EC5738 /* IBMData.framework */; settings = {ASSET_TAGS = (); }; };
+		70DD0F0D1BAEBB2000EC5738 /* IBMFileSync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70DD0F0A1BAEBB2000EC5738 /* IBMFileSync.framework */; settings = {ASSET_TAGS = (); }; };
+		70DD0F0F1BAEBB2C00EC5738 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 70DD0F0E1BAEBB2C00EC5738 /* libsqlite3.tbd */; };
+		70DD0F111BAEBB6100EC5738 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70DD0F101BAEBB6100EC5738 /* MobileCoreServices.framework */; };
+		70DD0F131BAEBB6800EC5738 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70DD0F121BAEBB6800EC5738 /* SystemConfiguration.framework */; };
+		70DD0F151BAEBBC700EC5738 /* bluelist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 70DD0F141BAEBBC700EC5738 /* bluelist.plist */; settings = {ASSET_TAGS = (); }; };
+		70DD0F1F1BAEBC3500EC5738 /* Audio.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DD0F181BAEBC3500EC5738 /* Audio.m */; settings = {ASSET_TAGS = (); }; };
+		70DD0F201BAEBC3500EC5738 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DD0F1A1BAEBC3500EC5738 /* Book.m */; settings = {ASSET_TAGS = (); }; };
+		70DD0F211BAEBC3500EC5738 /* Page.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DD0F1C1BAEBC3500EC5738 /* Page.m */; settings = {ASSET_TAGS = (); }; };
+		70DD0F221BAEBC3500EC5738 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DD0F1E1BAEBC3500EC5738 /* User.m */; settings = {ASSET_TAGS = (); }; };
 		FC38BBFC1BAE203B00389785 /* edit.png in Resources */ = {isa = PBXBuildFile; fileRef = FC38BBF91BAE203B00389785 /* edit.png */; settings = {ASSET_TAGS = (); }; };
 		FC38BBFD1BAE203B00389785 /* new.png in Resources */ = {isa = PBXBuildFile; fileRef = FC38BBFA1BAE203B00389785 /* new.png */; settings = {ASSET_TAGS = (); }; };
 		FC38BBFF1BAE205A00389785 /* splashscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = FC38BBFE1BAE205A00389785 /* splashscreen.png */; settings = {ASSET_TAGS = (); }; };
@@ -118,6 +129,21 @@
 		709BADD91BAE435A00C9A6E5 /* ClipartCanvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClipartCanvas.h; sourceTree = "<group>"; };
 		709BADDA1BAE435A00C9A6E5 /* ClipartCanvas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClipartCanvas.m; sourceTree = "<group>"; };
 		709BADDB1BAE435A00C9A6E5 /* ClipartCanvas.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClipartCanvas.xib; sourceTree = "<group>"; };
+		70DD0F081BAEBB2000EC5738 /* IBMBluemix.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IBMBluemix.framework; path = "ibm-bluemix-sdk-ios/IBMBluemix.framework"; sourceTree = "<group>"; };
+		70DD0F091BAEBB2000EC5738 /* IBMData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IBMData.framework; path = "ibm-bluemix-sdk-ios/IBMData.framework"; sourceTree = "<group>"; };
+		70DD0F0A1BAEBB2000EC5738 /* IBMFileSync.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IBMFileSync.framework; path = "ibm-bluemix-sdk-ios/IBMFileSync.framework"; sourceTree = "<group>"; };
+		70DD0F0E1BAEBB2C00EC5738 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		70DD0F101BAEBB6100EC5738 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		70DD0F121BAEBB6800EC5738 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		70DD0F141BAEBBC700EC5738 /* bluelist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = bluelist.plist; sourceTree = "<group>"; };
+		70DD0F171BAEBC3500EC5738 /* Audio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Audio.h; sourceTree = "<group>"; };
+		70DD0F181BAEBC3500EC5738 /* Audio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Audio.m; sourceTree = "<group>"; };
+		70DD0F191BAEBC3500EC5738 /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		70DD0F1A1BAEBC3500EC5738 /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
+		70DD0F1B1BAEBC3500EC5738 /* Page.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Page.h; sourceTree = "<group>"; };
+		70DD0F1C1BAEBC3500EC5738 /* Page.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Page.m; sourceTree = "<group>"; };
+		70DD0F1D1BAEBC3500EC5738 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		70DD0F1E1BAEBC3500EC5738 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		FC38BBF91BAE203B00389785 /* edit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edit.png; sourceTree = "<group>"; };
 		FC38BBFA1BAE203B00389785 /* new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = new.png; sourceTree = "<group>"; };
 		FC38BBFE1BAE205A00389785 /* splashscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splashscreen.png; sourceTree = "<group>"; };
@@ -233,6 +259,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70DD0F131BAEBB6800EC5738 /* SystemConfiguration.framework in Frameworks */,
+				70DD0F111BAEBB6100EC5738 /* MobileCoreServices.framework in Frameworks */,
+				70DD0F0F1BAEBB2C00EC5738 /* libsqlite3.tbd in Frameworks */,
+				70DD0F0D1BAEBB2000EC5738 /* IBMFileSync.framework in Frameworks */,
+				70DD0F0B1BAEBB2000EC5738 /* IBMBluemix.framework in Frameworks */,
+				70DD0F0C1BAEBB2000EC5738 /* IBMData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +300,21 @@
 			name = ClipartCanvas;
 			sourceTree = "<group>";
 		};
+		70DD0F161BAEBC2100EC5738 /* Bluemix */ = {
+			isa = PBXGroup;
+			children = (
+				70DD0F171BAEBC3500EC5738 /* Audio.h */,
+				70DD0F181BAEBC3500EC5738 /* Audio.m */,
+				70DD0F191BAEBC3500EC5738 /* Book.h */,
+				70DD0F1A1BAEBC3500EC5738 /* Book.m */,
+				70DD0F1B1BAEBC3500EC5738 /* Page.h */,
+				70DD0F1C1BAEBC3500EC5738 /* Page.m */,
+				70DD0F1D1BAEBC3500EC5738 /* User.h */,
+				70DD0F1E1BAEBC3500EC5738 /* User.m */,
+			);
+			name = Bluemix;
+			sourceTree = "<group>";
+		};
 		FC898EAF1BAE5ADE0093732A /* Audio */ = {
 			isa = PBXGroup;
 			children = (
@@ -300,6 +347,12 @@
 		FC9545BA1BA8A60F008AAF61 = {
 			isa = PBXGroup;
 			children = (
+				70DD0F121BAEBB6800EC5738 /* SystemConfiguration.framework */,
+				70DD0F101BAEBB6100EC5738 /* MobileCoreServices.framework */,
+				70DD0F0E1BAEBB2C00EC5738 /* libsqlite3.tbd */,
+				70DD0F081BAEBB2000EC5738 /* IBMBluemix.framework */,
+				70DD0F091BAEBB2000EC5738 /* IBMData.framework */,
+				70DD0F0A1BAEBB2000EC5738 /* IBMFileSync.framework */,
 				FC9545C51BA8A60F008AAF61 /* ChildrenBook */,
 				FC9545DF1BA8A60F008AAF61 /* ChildrenBookTests */,
 				FC9545C41BA8A60F008AAF61 /* Products */,
@@ -318,6 +371,7 @@
 		FC9545C51BA8A60F008AAF61 /* ChildrenBook */ = {
 			isa = PBXGroup;
 			children = (
+				70DD0F161BAEBC2100EC5738 /* Bluemix */,
 				FC898EAF1BAE5ADE0093732A /* Audio */,
 				709BADD01BAE433D00C9A6E5 /* ClipartCanvas */,
 				709BADCF1BAE433300C9A6E5 /* ThemeCanvas */,
@@ -350,6 +404,7 @@
 		FC9545C61BA8A60F008AAF61 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				70DD0F141BAEBBC700EC5738 /* bluelist.plist */,
 				FC9545F11BA8B869008AAF61 /* Images */,
 				FC9545C71BA8A60F008AAF61 /* Info.plist */,
 				FC9545C81BA8A60F008AAF61 /* main.m */,
@@ -560,6 +615,7 @@
 				709BADDD1BAE435A00C9A6E5 /* ClipartCanvas.xib in Resources */,
 				FC898EAD1BAE56080093732A /* color_line.png in Resources */,
 				709BADD71BAE435100C9A6E5 /* CanvasVC.xib in Resources */,
+				70DD0F151BAEBBC700EC5738 /* bluelist.plist in Resources */,
 				FC38BBFD1BAE203B00389785 /* new.png in Resources */,
 				FCEB36E21BAE97F100F85AFB /* back.png in Resources */,
 				FCEB36E11BAE97F100F85AFB /* add-64.png in Resources */,
@@ -624,11 +680,13 @@
 				FC9545F81BA8F631008AAF61 /* SelectThemeViewController.m in Sources */,
 				FC898EC51BAE5BDA0093732A /* STPopupLeftBarItem.m in Sources */,
 				FC9546C61BAB9E76008AAF61 /* DRColorPickerColor.m in Sources */,
+				70DD0F221BAEBC3500EC5738 /* User.m in Sources */,
 				FC9546C41BAB9E76008AAF61 /* DRColorPicker.m in Sources */,
 				FC9545FE1BAAF16F008AAF61 /* DragableClipart.m in Sources */,
 				FC9546D21BAB9E76008AAF61 /* DRColorPickerWheelView.m in Sources */,
 				FC9546CD1BAB9E76008AAF61 /* DRColorPickerHorizontalCollectionViewLayout.m in Sources */,
 				FC9546031BAB0565008AAF61 /* PageCreatorViewController.m in Sources */,
+				70DD0F201BAEBC3500EC5738 /* Book.m in Sources */,
 				FC95460B1BAB85C6008AAF61 /* FontStyleViewController.m in Sources */,
 				FC9546D01BAB9E76008AAF61 /* DRColorPickerStore.m in Sources */,
 				FC898ED91BAE6AAE0093732A /* SelectStoryViewController.m in Sources */,
@@ -642,8 +700,10 @@
 				FC9546071BAB5CBB008AAF61 /* PathHelper.m in Sources */,
 				FC9546C51BAB9E76008AAF61 /* DRColorPickerBaseViewController.m in Sources */,
 				FC9546D31BAB9E76008AAF61 /* DRColorPickerWheelViewController.m in Sources */,
+				70DD0F1F1BAEBC3500EC5738 /* Audio.m in Sources */,
 				709BADD81BAE435100C9A6E5 /* SmoothedBIView.m in Sources */,
 				FC9546CF1BAB9E76008AAF61 /* DRColorPickerHueViewController.m in Sources */,
+				70DD0F211BAEBC3500EC5738 /* Page.m in Sources */,
 				FC9546C21BAB9E76008AAF61 /* DRColorPicker+UIColor.m in Sources */,
 				FC9545CC1BA8A60F008AAF61 /* AppDelegate.m in Sources */,
 				FC9546CA1BAB9E76008AAF61 /* DRColorPickerGridViewController.m in Sources */,
@@ -770,6 +830,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ibm-bluemix-sdk-ios",
+				);
 				INFOPLIST_FILE = ChildrenBook/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -786,6 +850,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ibm-bluemix-sdk-ios",
+				);
 				INFOPLIST_FILE = ChildrenBook/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
