@@ -44,6 +44,9 @@
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Mp-we-3W5">
                     <rect key="frame" x="370" y="428" width="302" height="41"/>
                     <state key="normal" backgroundImage="googlelogin.png"/>
+                    <connections>
+                        <action selector="SignInGoogleButtonClicked:" destination="-1" eventType="touchUpInside" id="5I9-hB-Lkr"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

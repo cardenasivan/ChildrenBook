@@ -12,9 +12,6 @@
 		709BADD81BAE435100C9A6E5 /* SmoothedBIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 709BADD51BAE435100C9A6E5 /* SmoothedBIView.m */; settings = {ASSET_TAGS = (); }; };
 		709BADDC1BAE435A00C9A6E5 /* ClipartCanvas.m in Sources */ = {isa = PBXBuildFile; fileRef = 709BADDA1BAE435A00C9A6E5 /* ClipartCanvas.m */; settings = {ASSET_TAGS = (); }; };
 		709BADDD1BAE435A00C9A6E5 /* ClipartCanvas.xib in Resources */ = {isa = PBXBuildFile; fileRef = 709BADDB1BAE435A00C9A6E5 /* ClipartCanvas.xib */; settings = {ASSET_TAGS = (); }; };
-		70DD0F0B1BAEBB2000EC5738 /* IBMBluemix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70DD0F081BAEBB2000EC5738 /* IBMBluemix.framework */; settings = {ASSET_TAGS = (); }; };
-		70DD0F0C1BAEBB2000EC5738 /* IBMData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70DD0F091BAEBB2000EC5738 /* IBMData.framework */; settings = {ASSET_TAGS = (); }; };
-		70DD0F0D1BAEBB2000EC5738 /* IBMFileSync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70DD0F0A1BAEBB2000EC5738 /* IBMFileSync.framework */; settings = {ASSET_TAGS = (); }; };
 		70DD0F0F1BAEBB2C00EC5738 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 70DD0F0E1BAEBB2C00EC5738 /* libsqlite3.tbd */; };
 		70DD0F111BAEBB6100EC5738 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70DD0F101BAEBB6100EC5738 /* MobileCoreServices.framework */; };
 		70DD0F131BAEBB6800EC5738 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70DD0F121BAEBB6800EC5738 /* SystemConfiguration.framework */; };
@@ -23,10 +20,25 @@
 		70DD0F201BAEBC3500EC5738 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DD0F1A1BAEBC3500EC5738 /* Book.m */; settings = {ASSET_TAGS = (); }; };
 		70DD0F211BAEBC3500EC5738 /* Page.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DD0F1C1BAEBC3500EC5738 /* Page.m */; settings = {ASSET_TAGS = (); }; };
 		70DD0F221BAEBC3500EC5738 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DD0F1E1BAEBC3500EC5738 /* User.m */; settings = {ASSET_TAGS = (); }; };
+		FC03FD6B1BAED3D500302F92 /* IBMBluemix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC806C151BAED21100C672E8 /* IBMBluemix.framework */; };
+		FC03FD6C1BAED3D500302F92 /* IBMData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC806C161BAED21100C672E8 /* IBMData.framework */; };
+		FC03FD6D1BAED3D500302F92 /* IBMFileSync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC806C171BAED21100C672E8 /* IBMFileSync.framework */; };
+		FC03FD6E1BAED3E100302F92 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 70DD0F0E1BAEBB2C00EC5738 /* libsqlite3.tbd */; };
+		FC03FD6F1BAED3E700302F92 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70DD0F101BAEBB6100EC5738 /* MobileCoreServices.framework */; };
+		FC03FD701BAED3EF00302F92 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70DD0F121BAEBB6800EC5738 /* SystemConfiguration.framework */; };
+		FC03FD7B1BAED4AB00302F92 /* GTMHTTPFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = FC03FD731BAED4AB00302F92 /* GTMHTTPFetcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FC03FD7C1BAED4AB00302F92 /* GTMOAuth2Authentication.m in Sources */ = {isa = PBXBuildFile; fileRef = FC03FD751BAED4AB00302F92 /* GTMOAuth2Authentication.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FC03FD7D1BAED4AB00302F92 /* GTMOAuth2SignIn.m in Sources */ = {isa = PBXBuildFile; fileRef = FC03FD771BAED4AB00302F92 /* GTMOAuth2SignIn.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FC03FD7E1BAED4AB00302F92 /* GTMOAuth2ViewControllerTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = FC03FD791BAED4AB00302F92 /* GTMOAuth2ViewControllerTouch.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FC03FD7F1BAED4AB00302F92 /* GTMOAuth2ViewTouch.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC03FD7A1BAED4AB00302F92 /* GTMOAuth2ViewTouch.xib */; settings = {ASSET_TAGS = (); }; };
+		FC03FD821BAED51000302F92 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = FC03FD811BAED51000302F92 /* SBJSON.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		FC38BBFC1BAE203B00389785 /* edit.png in Resources */ = {isa = PBXBuildFile; fileRef = FC38BBF91BAE203B00389785 /* edit.png */; settings = {ASSET_TAGS = (); }; };
 		FC38BBFD1BAE203B00389785 /* new.png in Resources */ = {isa = PBXBuildFile; fileRef = FC38BBFA1BAE203B00389785 /* new.png */; settings = {ASSET_TAGS = (); }; };
 		FC38BBFF1BAE205A00389785 /* splashscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = FC38BBFE1BAE205A00389785 /* splashscreen.png */; settings = {ASSET_TAGS = (); }; };
 		FC38BC001BAE205A00389785 /* splashscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = FC38BBFE1BAE205A00389785 /* splashscreen.png */; settings = {ASSET_TAGS = (); }; };
+		FC806C181BAED21100C672E8 /* IBMBluemix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC806C151BAED21100C672E8 /* IBMBluemix.framework */; };
+		FC806C191BAED21100C672E8 /* IBMData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC806C161BAED21100C672E8 /* IBMData.framework */; };
+		FC806C1A1BAED21100C672E8 /* IBMFileSync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC806C171BAED21100C672E8 /* IBMFileSync.framework */; };
 		FC898EA71BAE4B900093732A /* startbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = FC898EA61BAE4B900093732A /* startbutton.png */; settings = {ASSET_TAGS = (); }; };
 		FC898EA81BAE4B900093732A /* startbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = FC898EA61BAE4B900093732A /* startbutton.png */; settings = {ASSET_TAGS = (); }; };
 		FC898EAA1BAE50450093732A /* bookfontstyle.png in Resources */ = {isa = PBXBuildFile; fileRef = FC898EA91BAE50450093732A /* bookfontstyle.png */; settings = {ASSET_TAGS = (); }; };
@@ -129,9 +141,6 @@
 		709BADD91BAE435A00C9A6E5 /* ClipartCanvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClipartCanvas.h; sourceTree = "<group>"; };
 		709BADDA1BAE435A00C9A6E5 /* ClipartCanvas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClipartCanvas.m; sourceTree = "<group>"; };
 		709BADDB1BAE435A00C9A6E5 /* ClipartCanvas.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClipartCanvas.xib; sourceTree = "<group>"; };
-		70DD0F081BAEBB2000EC5738 /* IBMBluemix.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IBMBluemix.framework; path = "ibm-bluemix-sdk-ios/IBMBluemix.framework"; sourceTree = "<group>"; };
-		70DD0F091BAEBB2000EC5738 /* IBMData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IBMData.framework; path = "ibm-bluemix-sdk-ios/IBMData.framework"; sourceTree = "<group>"; };
-		70DD0F0A1BAEBB2000EC5738 /* IBMFileSync.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IBMFileSync.framework; path = "ibm-bluemix-sdk-ios/IBMFileSync.framework"; sourceTree = "<group>"; };
 		70DD0F0E1BAEBB2C00EC5738 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		70DD0F101BAEBB6100EC5738 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		70DD0F121BAEBB6800EC5738 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -144,9 +153,23 @@
 		70DD0F1C1BAEBC3500EC5738 /* Page.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Page.m; sourceTree = "<group>"; };
 		70DD0F1D1BAEBC3500EC5738 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		70DD0F1E1BAEBC3500EC5738 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		FC03FD721BAED4AB00302F92 /* GTMHTTPFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMHTTPFetcher.h; path = google/GTMHTTPFetcher.h; sourceTree = "<group>"; };
+		FC03FD731BAED4AB00302F92 /* GTMHTTPFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMHTTPFetcher.m; path = google/GTMHTTPFetcher.m; sourceTree = "<group>"; };
+		FC03FD741BAED4AB00302F92 /* GTMOAuth2Authentication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMOAuth2Authentication.h; path = google/GTMOAuth2Authentication.h; sourceTree = "<group>"; };
+		FC03FD751BAED4AB00302F92 /* GTMOAuth2Authentication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMOAuth2Authentication.m; path = google/GTMOAuth2Authentication.m; sourceTree = "<group>"; };
+		FC03FD761BAED4AB00302F92 /* GTMOAuth2SignIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMOAuth2SignIn.h; path = google/GTMOAuth2SignIn.h; sourceTree = "<group>"; };
+		FC03FD771BAED4AB00302F92 /* GTMOAuth2SignIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMOAuth2SignIn.m; path = google/GTMOAuth2SignIn.m; sourceTree = "<group>"; };
+		FC03FD781BAED4AB00302F92 /* GTMOAuth2ViewControllerTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMOAuth2ViewControllerTouch.h; path = google/GTMOAuth2ViewControllerTouch.h; sourceTree = "<group>"; };
+		FC03FD791BAED4AB00302F92 /* GTMOAuth2ViewControllerTouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMOAuth2ViewControllerTouch.m; path = google/GTMOAuth2ViewControllerTouch.m; sourceTree = "<group>"; };
+		FC03FD7A1BAED4AB00302F92 /* GTMOAuth2ViewTouch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GTMOAuth2ViewTouch.xib; path = google/GTMOAuth2ViewTouch.xib; sourceTree = "<group>"; };
+		FC03FD801BAED51000302F92 /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJSON.h; path = google/SBJSON.h; sourceTree = "<group>"; };
+		FC03FD811BAED51000302F92 /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJSON.m; path = google/SBJSON.m; sourceTree = "<group>"; };
 		FC38BBF91BAE203B00389785 /* edit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edit.png; sourceTree = "<group>"; };
 		FC38BBFA1BAE203B00389785 /* new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = new.png; sourceTree = "<group>"; };
 		FC38BBFE1BAE205A00389785 /* splashscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splashscreen.png; sourceTree = "<group>"; };
+		FC806C151BAED21100C672E8 /* IBMBluemix.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IBMBluemix.framework; path = "ibm-bluemix-sdk-ios/IBMBluemix.framework"; sourceTree = "<group>"; };
+		FC806C161BAED21100C672E8 /* IBMData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IBMData.framework; path = "ibm-bluemix-sdk-ios/IBMData.framework"; sourceTree = "<group>"; };
+		FC806C171BAED21100C672E8 /* IBMFileSync.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IBMFileSync.framework; path = "ibm-bluemix-sdk-ios/IBMFileSync.framework"; sourceTree = "<group>"; };
 		FC898EA61BAE4B900093732A /* startbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = startbutton.png; sourceTree = "<group>"; };
 		FC898EA91BAE50450093732A /* bookfontstyle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bookfontstyle.png; sourceTree = "<group>"; };
 		FC898EAC1BAE56080093732A /* color_line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = color_line.png; sourceTree = "<group>"; };
@@ -259,12 +282,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC806C181BAED21100C672E8 /* IBMBluemix.framework in Frameworks */,
+				FC806C191BAED21100C672E8 /* IBMData.framework in Frameworks */,
+				FC806C1A1BAED21100C672E8 /* IBMFileSync.framework in Frameworks */,
 				70DD0F131BAEBB6800EC5738 /* SystemConfiguration.framework in Frameworks */,
 				70DD0F111BAEBB6100EC5738 /* MobileCoreServices.framework in Frameworks */,
 				70DD0F0F1BAEBB2C00EC5738 /* libsqlite3.tbd in Frameworks */,
-				70DD0F0D1BAEBB2000EC5738 /* IBMFileSync.framework in Frameworks */,
-				70DD0F0B1BAEBB2000EC5738 /* IBMBluemix.framework in Frameworks */,
-				70DD0F0C1BAEBB2000EC5738 /* IBMData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +295,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC03FD701BAED3EF00302F92 /* SystemConfiguration.framework in Frameworks */,
+				FC03FD6F1BAED3E700302F92 /* MobileCoreServices.framework in Frameworks */,
+				FC03FD6E1BAED3E100302F92 /* libsqlite3.tbd in Frameworks */,
+				FC03FD6B1BAED3D500302F92 /* IBMBluemix.framework in Frameworks */,
+				FC03FD6C1BAED3D500302F92 /* IBMData.framework in Frameworks */,
+				FC03FD6D1BAED3D500302F92 /* IBMFileSync.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +344,24 @@
 			name = Bluemix;
 			sourceTree = "<group>";
 		};
+		FC03FD711BAED4A000302F92 /* google API */ = {
+			isa = PBXGroup;
+			children = (
+				FC03FD801BAED51000302F92 /* SBJSON.h */,
+				FC03FD811BAED51000302F92 /* SBJSON.m */,
+				FC03FD721BAED4AB00302F92 /* GTMHTTPFetcher.h */,
+				FC03FD731BAED4AB00302F92 /* GTMHTTPFetcher.m */,
+				FC03FD741BAED4AB00302F92 /* GTMOAuth2Authentication.h */,
+				FC03FD751BAED4AB00302F92 /* GTMOAuth2Authentication.m */,
+				FC03FD761BAED4AB00302F92 /* GTMOAuth2SignIn.h */,
+				FC03FD771BAED4AB00302F92 /* GTMOAuth2SignIn.m */,
+				FC03FD781BAED4AB00302F92 /* GTMOAuth2ViewControllerTouch.h */,
+				FC03FD791BAED4AB00302F92 /* GTMOAuth2ViewControllerTouch.m */,
+				FC03FD7A1BAED4AB00302F92 /* GTMOAuth2ViewTouch.xib */,
+			);
+			name = "google API";
+			sourceTree = "<group>";
+		};
 		FC898EAF1BAE5ADE0093732A /* Audio */ = {
 			isa = PBXGroup;
 			children = (
@@ -347,12 +394,12 @@
 		FC9545BA1BA8A60F008AAF61 = {
 			isa = PBXGroup;
 			children = (
+				FC806C151BAED21100C672E8 /* IBMBluemix.framework */,
+				FC806C161BAED21100C672E8 /* IBMData.framework */,
+				FC806C171BAED21100C672E8 /* IBMFileSync.framework */,
 				70DD0F121BAEBB6800EC5738 /* SystemConfiguration.framework */,
 				70DD0F101BAEBB6100EC5738 /* MobileCoreServices.framework */,
 				70DD0F0E1BAEBB2C00EC5738 /* libsqlite3.tbd */,
-				70DD0F081BAEBB2000EC5738 /* IBMBluemix.framework */,
-				70DD0F091BAEBB2000EC5738 /* IBMData.framework */,
-				70DD0F0A1BAEBB2000EC5738 /* IBMFileSync.framework */,
 				FC9545C51BA8A60F008AAF61 /* ChildrenBook */,
 				FC9545DF1BA8A60F008AAF61 /* ChildrenBookTests */,
 				FC9545C41BA8A60F008AAF61 /* Products */,
@@ -371,6 +418,7 @@
 		FC9545C51BA8A60F008AAF61 /* ChildrenBook */ = {
 			isa = PBXGroup;
 			children = (
+				FC03FD711BAED4A000302F92 /* google API */,
 				70DD0F161BAEBC2100EC5738 /* Bluemix */,
 				FC898EAF1BAE5ADE0093732A /* Audio */,
 				709BADD01BAE433D00C9A6E5 /* ClipartCanvas */,
@@ -640,6 +688,7 @@
 				FCEB36E41BAE97F100F85AFB /* finish.png in Resources */,
 				FCEB36E71BAE97F100F85AFB /* upload-64.png in Resources */,
 				FC9545F01BA8AC75008AAF61 /* HomeViewController.xib in Resources */,
+				FC03FD7F1BAED4AB00302F92 /* GTMOAuth2ViewTouch.xib in Resources */,
 				FC898EDA1BAE6AAE0093732A /* SelectStoryViewController.xib in Resources */,
 				FCEB36F11BAEB4DB00F85AFB /* icon@1x.png in Resources */,
 				FCBC456F1BAE2C4300EA7399 /* loginbox.png in Resources */,
@@ -679,10 +728,12 @@
 				FCBC45031BAE227400EA7399 /* LoginViewController.m in Sources */,
 				FC9545F81BA8F631008AAF61 /* SelectThemeViewController.m in Sources */,
 				FC898EC51BAE5BDA0093732A /* STPopupLeftBarItem.m in Sources */,
+				FC03FD7D1BAED4AB00302F92 /* GTMOAuth2SignIn.m in Sources */,
 				FC9546C61BAB9E76008AAF61 /* DRColorPickerColor.m in Sources */,
 				70DD0F221BAEBC3500EC5738 /* User.m in Sources */,
 				FC9546C41BAB9E76008AAF61 /* DRColorPicker.m in Sources */,
 				FC9545FE1BAAF16F008AAF61 /* DragableClipart.m in Sources */,
+				FC03FD7C1BAED4AB00302F92 /* GTMOAuth2Authentication.m in Sources */,
 				FC9546D21BAB9E76008AAF61 /* DRColorPickerWheelView.m in Sources */,
 				FC9546CD1BAB9E76008AAF61 /* DRColorPickerHorizontalCollectionViewLayout.m in Sources */,
 				FC9546031BAB0565008AAF61 /* PageCreatorViewController.m in Sources */,
@@ -694,9 +745,11 @@
 				FC898ECF1BAE5C460093732A /* UIViewController+STPopup.m in Sources */,
 				FC9546C81BAB9E76008AAF61 /* DRColorPickerGridView.m in Sources */,
 				FC9546CB1BAB9E76008AAF61 /* DRColorPickerHomeView.m in Sources */,
+				FC03FD7E1BAED4AB00302F92 /* GTMOAuth2ViewControllerTouch.m in Sources */,
 				709BADD61BAE435100C9A6E5 /* CanvasVC.m in Sources */,
 				FC9546CC1BAB9E76008AAF61 /* DRColorPickerHomeViewController.m in Sources */,
 				FC9546D11BAB9E76008AAF61 /* DRColorPickerViewController.m in Sources */,
+				FC03FD821BAED51000302F92 /* SBJSON.m in Sources */,
 				FC9546071BAB5CBB008AAF61 /* PathHelper.m in Sources */,
 				FC9546C51BAB9E76008AAF61 /* DRColorPickerBaseViewController.m in Sources */,
 				FC9546D31BAB9E76008AAF61 /* DRColorPickerWheelViewController.m in Sources */,
@@ -708,6 +761,7 @@
 				FC9545CC1BA8A60F008AAF61 /* AppDelegate.m in Sources */,
 				FC9546CA1BAB9E76008AAF61 /* DRColorPickerGridViewController.m in Sources */,
 				FC898ECD1BAE5C460093732A /* UIResponder+STPopup.m in Sources */,
+				FC03FD7B1BAED4AB00302F92 /* GTMHTTPFetcher.m in Sources */,
 				FC9545C91BA8A60F008AAF61 /* main.m in Sources */,
 				709BADDC1BAE435A00C9A6E5 /* ClipartCanvas.m in Sources */,
 				FC9546C71BAB9E76008AAF61 /* DRColorPickerColorView.m in Sources */,
@@ -761,6 +815,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -773,6 +828,7 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				"GCC_WARN_64_TO_32_BIT_CONVERSION[arch=*64]" = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
@@ -806,6 +862,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -830,10 +887,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ibm-bluemix-sdk-ios",
 				);
+				"GCC_WARN_64_TO_32_BIT_CONVERSION[arch=*64]" = NO;
 				INFOPLIST_FILE = ChildrenBook/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -850,6 +909,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ibm-bluemix-sdk-ios",
@@ -871,6 +931,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)/ibm-bluemix-sdk-ios",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -891,6 +952,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)/ibm-bluemix-sdk-ios",
 				);
 				INFOPLIST_FILE = ChildrenBookTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
