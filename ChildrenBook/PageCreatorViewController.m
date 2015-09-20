@@ -32,10 +32,11 @@
 @property (nonatomic, strong) IBOutlet UIBarButtonItem* pageView;
 @property (nonatomic, strong) IBOutlet UIBarButtonItem* hideAction;
 @property (nonatomic, strong) IBOutlet UIToolbar* toolbar;
+@property (nonatomic, strong) IBOutlet UIToolbar* toolBar2;
 @end
 
 @implementation PageCreatorViewController
-@synthesize dataSource, storyName, storyBookPath, manifestFilePath, collectionView, bookPage, textArea, pageNumber, font, foregroundColor, pageView, hideAction, sideView, toolbar;
+@synthesize dataSource, storyName, storyBookPath, manifestFilePath, collectionView, bookPage, textArea, pageNumber, font, foregroundColor, pageView, hideAction, sideView, toolbar, toolBar2;
 
 - (void)viewDidLoad
 {
@@ -199,6 +200,9 @@
 
 - (void)savePage
 {
+    [self.sideView setHidden:YES];
+    [self.toolbar setHidden:YES];
+    [self.toolBar2 setHidden:YES];
     self.textArea.borderStyle = UITextBorderStyleNone;
     [self.textArea resignFirstResponder];
     UIGraphicsBeginImageContextWithOptions(self.bookPage.bounds.size, YES, 1.0);

@@ -13,6 +13,7 @@
                 <outlet property="pageView" destination="Iqe-ph-nff" id="owH-Kj-Yuj"/>
                 <outlet property="sideView" destination="i02-k1-Sl0" id="dlk-AE-y6Z"/>
                 <outlet property="textArea" destination="2g7-o8-nsi" id="7DL-pD-tK2"/>
+                <outlet property="toolBar2" destination="ST1-pe-gGE" id="qRj-6a-Ngz"/>
                 <outlet property="toolbar" destination="YUa-Sv-cdt" id="I9e-yH-eGN"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -71,7 +72,7 @@
                             <rect key="frame" x="0.0" y="0.0" width="303" height="725"/>
                         </imageView>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B9X-Vz-gWL">
-                            <rect key="frame" x="53" y="682" width="197" height="34"/>
+                            <rect key="frame" x="53" y="664" width="197" height="34"/>
                             <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="20"/>
                             <state key="normal" backgroundImage="finish.png">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>

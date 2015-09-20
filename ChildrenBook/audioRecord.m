@@ -106,6 +106,7 @@ int secondsLeft;
     NSURL *temporaryRecFile = [NSURL fileURLWithPath:[self.pathForAudio stringByAppendingPathComponent:@"audio.aif"]];
     
     _player =  [[AVAudioPlayer alloc] initWithContentsOfURL:temporaryRecFile error:nil];
+    _player.delegate = self;
     [_player setNumberOfLoops:0];
     _player.volume = 10;
     [_player prepareToPlay];
@@ -126,5 +127,15 @@ int secondsLeft;
     
     secondsLeft = hours = minutes = seconds = 0;
     self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(updateCounter:) userInfo:nil repeats:YES];
+}
+
+
+- (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag
+{
+    
+}
+- (void)audioPlayerDecodeErrorDidOccur:(AVAudioPlayer *)player error:(NSError * __nullable)error
+{
+    
 }
 @end

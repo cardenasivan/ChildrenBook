@@ -23,6 +23,7 @@
     [super viewDidLoad];
     self.dataSource = [[NSMutableArray alloc] init];
     [self reloadData];
+     [[UIApplication sharedApplication] setStatusBarHidden:YES];
     // Do any additional setup after loading the view from its nib.
 }
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
