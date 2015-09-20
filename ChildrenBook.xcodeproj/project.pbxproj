@@ -36,6 +36,9 @@
 		FC898ECE1BAE5C460093732A /* UIResponder+STPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = FC898ECA1BAE5C460093732A /* UIResponder+STPopup.m */; settings = {ASSET_TAGS = (); }; };
 		FC898ECF1BAE5C460093732A /* UIViewController+STPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = FC898ECC1BAE5C460093732A /* UIViewController+STPopup.m */; settings = {ASSET_TAGS = (); }; };
 		FC898ED01BAE5C460093732A /* UIViewController+STPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = FC898ECC1BAE5C460093732A /* UIViewController+STPopup.m */; settings = {ASSET_TAGS = (); }; };
+		FC898ED91BAE6AAE0093732A /* SelectStoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC898ED71BAE6AAE0093732A /* SelectStoryViewController.m */; settings = {ASSET_TAGS = (); }; };
+		FC898EDA1BAE6AAE0093732A /* SelectStoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC898ED81BAE6AAE0093732A /* SelectStoryViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		FC898EDC1BAE72670093732A /* view.png in Resources */ = {isa = PBXBuildFile; fileRef = FC898EDB1BAE72670093732A /* view.png */; settings = {ASSET_TAGS = (); }; };
 		FC9545C91BA8A60F008AAF61 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9545C81BA8A60F008AAF61 /* main.m */; };
 		FC9545CC1BA8A60F008AAF61 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9545CB1BA8A60F008AAF61 /* AppDelegate.m */; };
 		FC9545D41BA8A60F008AAF61 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC9545D31BA8A60F008AAF61 /* Images.xcassets */; };
@@ -121,6 +124,10 @@
 		FC898ECA1BAE5C460093732A /* UIResponder+STPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+STPopup.m"; sourceTree = "<group>"; };
 		FC898ECB1BAE5C460093732A /* UIViewController+STPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+STPopup.h"; sourceTree = "<group>"; };
 		FC898ECC1BAE5C460093732A /* UIViewController+STPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+STPopup.m"; sourceTree = "<group>"; };
+		FC898ED61BAE6AAE0093732A /* SelectStoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectStoryViewController.h; sourceTree = "<group>"; };
+		FC898ED71BAE6AAE0093732A /* SelectStoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectStoryViewController.m; sourceTree = "<group>"; };
+		FC898ED81BAE6AAE0093732A /* SelectStoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectStoryViewController.xib; sourceTree = "<group>"; };
+		FC898EDB1BAE72670093732A /* view.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = view.png; sourceTree = "<group>"; };
 		FC9545C31BA8A60F008AAF61 /* ChildrenBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChildrenBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC9545C71BA8A60F008AAF61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC9545C81BA8A60F008AAF61 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -301,6 +308,9 @@
 				FCBC45001BAE227400EA7399 /* LoginViewController.h */,
 				FCBC45011BAE227400EA7399 /* LoginViewController.m */,
 				FCBC45021BAE227400EA7399 /* LoginViewController.xib */,
+				FC898ED61BAE6AAE0093732A /* SelectStoryViewController.h */,
+				FC898ED71BAE6AAE0093732A /* SelectStoryViewController.m */,
+				FC898ED81BAE6AAE0093732A /* SelectStoryViewController.xib */,
 			);
 			path = ChildrenBook;
 			sourceTree = "<group>";
@@ -335,6 +345,7 @@
 		FC9545F11BA8B869008AAF61 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				FC898EDB1BAE72670093732A /* view.png */,
 				FC898EA91BAE50450093732A /* bookfontstyle.png */,
 				FCBC45781BAE362C00EA7399 /* loginscreen.png */,
 				FCBC45681BAE2C2D00EA7399 /* googlelogin.png */,
@@ -511,11 +522,13 @@
 				FC898EA71BAE4B900093732A /* startbutton.png in Resources */,
 				FC38BBFC1BAE203B00389785 /* edit.png in Resources */,
 				FCBC45661BAE261C00EA7399 /* login.png in Resources */,
+				FC898EDC1BAE72670093732A /* view.png in Resources */,
 				FC9545D41BA8A60F008AAF61 /* Images.xcassets in Resources */,
 				FC898EB51BAE5AF40093732A /* audioRecord.xib in Resources */,
 				FCBC45691BAE2C2D00EA7399 /* googlelogin.png in Resources */,
 				FCBC45791BAE362C00EA7399 /* loginscreen.png in Resources */,
 				FC9545F01BA8AC75008AAF61 /* HomeViewController.xib in Resources */,
+				FC898EDA1BAE6AAE0093732A /* SelectStoryViewController.xib in Resources */,
 				FCBC456F1BAE2C4300EA7399 /* loginbox.png in Resources */,
 				FC9546041BAB0565008AAF61 /* PageCreatorViewController.xib in Resources */,
 				FC95460C1BAB85C6008AAF61 /* FontStyleViewController.xib in Resources */,
@@ -560,6 +573,7 @@
 				FC9546031BAB0565008AAF61 /* PageCreatorViewController.m in Sources */,
 				FC95460B1BAB85C6008AAF61 /* FontStyleViewController.m in Sources */,
 				FC9546D01BAB9E76008AAF61 /* DRColorPickerStore.m in Sources */,
+				FC898ED91BAE6AAE0093732A /* SelectStoryViewController.m in Sources */,
 				FC898EC31BAE5BDA0093732A /* STPopupController.m in Sources */,
 				FC898ECF1BAE5C460093732A /* UIViewController+STPopup.m in Sources */,
 				FC9546C81BAB9E76008AAF61 /* DRColorPickerGridView.m in Sources */,

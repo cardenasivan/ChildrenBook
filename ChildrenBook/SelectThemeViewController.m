@@ -73,17 +73,6 @@
     [super viewDidAppear:animated];
 }
 
-- (NSString *)getBackgroundPathImages
-{
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *docDir = nil;
-    if (paths != nil)
-    {
-        docDir = [paths objectAtIndex:0];
-    }
-    return docDir;
-}
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return self.dataSource.count;

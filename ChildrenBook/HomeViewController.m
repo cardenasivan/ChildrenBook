@@ -9,6 +9,7 @@
 #import "HomeViewController.h"
 #import "SelectThemeViewController.h"
 #import "ChildrenBookConstants.h"
+#import "SelectStoryViewController.h"
 
 
 @interface HomeViewController ()
@@ -51,6 +52,13 @@
     [alert setAlertViewStyle:UIAlertViewStylePlainTextInput];
     [alert show];
     [[alert textFieldAtIndex:0] resignFirstResponder];
+}
+
+- (IBAction)viewStoryBooks:(id)sender
+{
+    SelectStoryViewController* controller = [[SelectStoryViewController alloc] initWithNibName:@"SelectStoryViewController" bundle:nil];
+    
+    [self.navigationController pushViewController:controller animated:YES];
 }
 
 

@@ -15,6 +15,7 @@
 #import "ClipartCanvas.h"
 #import "STPopupController.h"
 #import "audioRecord.h"
+#import "HomeViewController.h"
 
 @interface PageCreatorViewController ()
 @property (nonatomic, strong) NSMutableArray* dataSource;
@@ -352,6 +353,12 @@
     popupController.cornerRadius = 4;
     popupController.transitionStyle = transitionStyle;
     [popupController presentInViewController:self];
+}
+
+- (IBAction)BookFinished:(id)sender
+{
+    HomeViewController* homeViewController = [[HomeViewController alloc] initWithNibName:@"homeViewController" bundle:nil];
+    [self.navigationController pushViewController:homeViewController animated:YES];
 }
 
 @end
