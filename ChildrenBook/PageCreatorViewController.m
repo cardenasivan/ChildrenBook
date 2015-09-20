@@ -98,7 +98,7 @@
     
     NSArray* lines = [fileContents componentsSeparatedByString:@"\r\n"];
     self.pageNumber = lines.count;
-    NSString* labelText = [NSString stringWithFormat:@"Page %lu", self.pageNumber];
+    NSString* labelText = [NSString stringWithFormat:@"Page %lu", (long)self.pageNumber];
     
     [self.titleLabel setText:labelText];
     

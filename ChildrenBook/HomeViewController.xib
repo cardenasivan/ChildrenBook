@@ -3,9 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
-        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
@@ -18,64 +15,47 @@
             <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bkg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="qDb-uP-S88">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashscreen.png" translatesAutoresizingMaskIntoConstraints="NO" id="qDb-uP-S88">
                     <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Storybook Adventures" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bca-BA-Mhh">
-                    <rect key="frame" x="318" y="8" width="388" height="62"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OiM-4v-w4T">
+                    <rect key="frame" x="83" y="104" width="239" height="147"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="62" id="SFD-n5-An8"/>
+                        <constraint firstAttribute="width" constant="239" id="xqA-jF-f3f"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
-                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OiM-4v-w4T">
-                    <rect key="frame" x="318" y="294" width="190" height="180"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="190" id="F5c-u2-D6d"/>
-                        <constraint firstAttribute="height" constant="180" id="mGD-wx-a7W"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="20"/>
-                    <state key="normal" title="Create a new story">
+                    <state key="normal" image="new.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
                         <action selector="createNewStory:" destination="-1" eventType="touchUpInside" id="9MB-MZ-5Fy"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ElH-vi-cYW">
-                    <rect key="frame" x="516" y="294" width="190" height="180"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ElH-vi-cYW">
+                    <rect key="frame" x="330" y="104" width="222" height="147"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="190" id="kWg-HA-SHB"/>
+                        <constraint firstAttribute="width" constant="222" id="5ph-VT-eiB"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="20"/>
-                    <state key="normal" title="Select an existing story">
+                    <state key="normal" image="edit.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="ElH-vi-cYW" firstAttribute="baseline" secondItem="OiM-4v-w4T" secondAttribute="firstBaseline" id="0dg-ry-ysD"/>
-                <constraint firstAttribute="trailing" secondItem="qDb-uP-S88" secondAttribute="trailing" id="0wp-VV-DJP"/>
-                <constraint firstItem="ElH-vi-cYW" firstAttribute="leading" secondItem="OiM-4v-w4T" secondAttribute="trailing" constant="8" symbolic="YES" id="4GD-on-atF"/>
-                <constraint firstItem="qDb-uP-S88" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="4p3-QB-f7S"/>
-                <constraint firstItem="OiM-4v-w4T" firstAttribute="leading" secondItem="Bca-BA-Mhh" secondAttribute="leading" id="CQA-Xw-RiX"/>
-                <constraint firstItem="ElH-vi-cYW" firstAttribute="trailing" secondItem="Bca-BA-Mhh" secondAttribute="trailing" id="HMe-zQ-1PH"/>
-                <constraint firstAttribute="bottom" secondItem="qDb-uP-S88" secondAttribute="bottom" id="NPE-9L-hBO"/>
-                <constraint firstItem="Bca-BA-Mhh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="topMargin" id="Ogw-r4-saK"/>
-                <constraint firstItem="Bca-BA-Mhh" firstAttribute="centerX" secondItem="qDb-uP-S88" secondAttribute="centerX" id="Ydi-b4-znM"/>
-                <constraint firstItem="qDb-uP-S88" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kcA-2B-bkd"/>
-                <constraint firstItem="OiM-4v-w4T" firstAttribute="top" secondItem="ElH-vi-cYW" secondAttribute="top" id="o1Q-Jr-15y"/>
-                <constraint firstItem="OiM-4v-w4T" firstAttribute="baseline" secondItem="ElH-vi-cYW" secondAttribute="firstBaseline" id="ve0-8Z-ClW"/>
-                <constraint firstItem="OiM-4v-w4T" firstAttribute="centerY" secondItem="qDb-uP-S88" secondAttribute="centerY" id="z7c-9b-OjL"/>
+                <constraint firstItem="OiM-4v-w4T" firstAttribute="top" secondItem="ElH-vi-cYW" secondAttribute="top" id="0wg-oF-IAI"/>
+                <constraint firstItem="OiM-4v-w4T" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="83" id="CgB-LR-Xn0"/>
+                <constraint firstItem="OiM-4v-w4T" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="104" id="THe-Lr-Era"/>
+                <constraint firstItem="qDb-uP-S88" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="aXq-iF-FFK"/>
+                <constraint firstItem="qDb-uP-S88" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ki5-Zs-6Sk"/>
+                <constraint firstItem="ElH-vi-cYW" firstAttribute="leading" secondItem="OiM-4v-w4T" secondAttribute="trailing" constant="8" symbolic="YES" id="yFm-X1-0cQ"/>
             </constraints>
             <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
         </view>
     </objects>
     <resources>
-        <image name="bkg.jpg" width="1000" height="1000"/>
+        <image name="edit.png" width="217" height="147"/>
+        <image name="new.png" width="217" height="147"/>
+        <image name="splashscreen.png" width="1024" height="768"/>
     </resources>
 </document>
