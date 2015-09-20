@@ -322,9 +322,6 @@
 
 - (IBAction)createNewImage:(id)sender
 {
-    
-    UIButton* barButton = (UIButton*)sender;
-    
     ClipartCanvas* clipartCanvas = [[ClipartCanvas alloc] initWithNibName:@"ClipartCanvas" bundle:nil];
     
     UIPopoverController* popover = [[UIPopoverController alloc] initWithContentViewController:clipartCanvas];
@@ -336,7 +333,8 @@
     
     popover.popoverContentSize = CGSizeMake(1024, 768);
     
-    [popover presentPopoverFromRect:barButton.frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+    [popover presentPopoverFromBarButtonItem:self.hideAction permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+//    [popover presentPopoverFromRect:barButton.frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
 }
 
 - (IBAction)recordAudio:(id)sender

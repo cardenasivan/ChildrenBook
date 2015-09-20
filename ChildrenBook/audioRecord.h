@@ -9,7 +9,9 @@
 #ifndef record2_audioRecord_h
 #define record2_audioRecord_h
 #import <UIKit/UIKit.h>
-@interface audioRecord : UIViewController
+#import <AVFoundation/AVFoundation.h>
+
+@interface audioRecord : UIViewController<AVAudioPlayerDelegate>
 
 @property (nonatomic,strong) IBOutlet UIButton *recordBtn;
 @property (weak, nonatomic) IBOutlet UIButton *stopBtn;

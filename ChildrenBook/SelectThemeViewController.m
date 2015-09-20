@@ -211,7 +211,7 @@
     
     popover.popoverContentSize = CGSizeMake(1024, 768);
     
-    [popover presentPopoverFromBarButtonItem:barButton permittedArrowDirections:UIPopoverArrowDirectionLeft animated:YES];
+    [popover presentPopoverFromBarButtonItem:barButton permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
 }
 
 @end

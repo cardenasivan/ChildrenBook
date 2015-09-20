@@ -132,7 +132,7 @@ int secondsLeft;
 
 - (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag
 {
-    
+     [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
 }
 - (void)audioPlayerDecodeErrorDidOccur:(AVAudioPlayer *)player error:(NSError * __nullable)error
 {
