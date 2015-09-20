@@ -16,6 +16,26 @@
 		FC38BBFD1BAE203B00389785 /* new.png in Resources */ = {isa = PBXBuildFile; fileRef = FC38BBFA1BAE203B00389785 /* new.png */; settings = {ASSET_TAGS = (); }; };
 		FC38BBFF1BAE205A00389785 /* splashscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = FC38BBFE1BAE205A00389785 /* splashscreen.png */; settings = {ASSET_TAGS = (); }; };
 		FC38BC001BAE205A00389785 /* splashscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = FC38BBFE1BAE205A00389785 /* splashscreen.png */; settings = {ASSET_TAGS = (); }; };
+		FC898EA71BAE4B900093732A /* startbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = FC898EA61BAE4B900093732A /* startbutton.png */; settings = {ASSET_TAGS = (); }; };
+		FC898EA81BAE4B900093732A /* startbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = FC898EA61BAE4B900093732A /* startbutton.png */; settings = {ASSET_TAGS = (); }; };
+		FC898EAA1BAE50450093732A /* bookfontstyle.png in Resources */ = {isa = PBXBuildFile; fileRef = FC898EA91BAE50450093732A /* bookfontstyle.png */; settings = {ASSET_TAGS = (); }; };
+		FC898EAB1BAE50450093732A /* bookfontstyle.png in Resources */ = {isa = PBXBuildFile; fileRef = FC898EA91BAE50450093732A /* bookfontstyle.png */; settings = {ASSET_TAGS = (); }; };
+		FC898EAD1BAE56080093732A /* color_line.png in Resources */ = {isa = PBXBuildFile; fileRef = FC898EAC1BAE56080093732A /* color_line.png */; settings = {ASSET_TAGS = (); }; };
+		FC898EAE1BAE56080093732A /* color_line.png in Resources */ = {isa = PBXBuildFile; fileRef = FC898EAC1BAE56080093732A /* color_line.png */; settings = {ASSET_TAGS = (); }; };
+		FC898EB31BAE5AF40093732A /* audioRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = FC898EB11BAE5AF40093732A /* audioRecord.m */; settings = {ASSET_TAGS = (); }; };
+		FC898EB41BAE5AF40093732A /* audioRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = FC898EB11BAE5AF40093732A /* audioRecord.m */; settings = {ASSET_TAGS = (); }; };
+		FC898EB51BAE5AF40093732A /* audioRecord.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC898EB21BAE5AF40093732A /* audioRecord.xib */; settings = {ASSET_TAGS = (); }; };
+		FC898EB61BAE5AF40093732A /* audioRecord.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC898EB21BAE5AF40093732A /* audioRecord.xib */; settings = {ASSET_TAGS = (); }; };
+		FC898EC31BAE5BDA0093732A /* STPopupController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC898EBC1BAE5BDA0093732A /* STPopupController.m */; settings = {ASSET_TAGS = (); }; };
+		FC898EC41BAE5BDA0093732A /* STPopupController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC898EBC1BAE5BDA0093732A /* STPopupController.m */; settings = {ASSET_TAGS = (); }; };
+		FC898EC51BAE5BDA0093732A /* STPopupLeftBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FC898EBE1BAE5BDA0093732A /* STPopupLeftBarItem.m */; settings = {ASSET_TAGS = (); }; };
+		FC898EC61BAE5BDA0093732A /* STPopupLeftBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FC898EBE1BAE5BDA0093732A /* STPopupLeftBarItem.m */; settings = {ASSET_TAGS = (); }; };
+		FC898EC71BAE5BDA0093732A /* STPopupNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = FC898EC01BAE5BDA0093732A /* STPopupNavigationBar.m */; settings = {ASSET_TAGS = (); }; };
+		FC898EC81BAE5BDA0093732A /* STPopupNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = FC898EC01BAE5BDA0093732A /* STPopupNavigationBar.m */; settings = {ASSET_TAGS = (); }; };
+		FC898ECD1BAE5C460093732A /* UIResponder+STPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = FC898ECA1BAE5C460093732A /* UIResponder+STPopup.m */; settings = {ASSET_TAGS = (); }; };
+		FC898ECE1BAE5C460093732A /* UIResponder+STPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = FC898ECA1BAE5C460093732A /* UIResponder+STPopup.m */; settings = {ASSET_TAGS = (); }; };
+		FC898ECF1BAE5C460093732A /* UIViewController+STPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = FC898ECC1BAE5C460093732A /* UIViewController+STPopup.m */; settings = {ASSET_TAGS = (); }; };
+		FC898ED01BAE5C460093732A /* UIViewController+STPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = FC898ECC1BAE5C460093732A /* UIViewController+STPopup.m */; settings = {ASSET_TAGS = (); }; };
 		FC9545C91BA8A60F008AAF61 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9545C81BA8A60F008AAF61 /* main.m */; };
 		FC9545CC1BA8A60F008AAF61 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9545CB1BA8A60F008AAF61 /* AppDelegate.m */; };
 		FC9545D41BA8A60F008AAF61 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC9545D31BA8A60F008AAF61 /* Images.xcassets */; };
@@ -84,6 +104,23 @@
 		FC38BBF91BAE203B00389785 /* edit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edit.png; sourceTree = "<group>"; };
 		FC38BBFA1BAE203B00389785 /* new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = new.png; sourceTree = "<group>"; };
 		FC38BBFE1BAE205A00389785 /* splashscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splashscreen.png; sourceTree = "<group>"; };
+		FC898EA61BAE4B900093732A /* startbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = startbutton.png; sourceTree = "<group>"; };
+		FC898EA91BAE50450093732A /* bookfontstyle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bookfontstyle.png; sourceTree = "<group>"; };
+		FC898EAC1BAE56080093732A /* color_line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = color_line.png; sourceTree = "<group>"; };
+		FC898EB01BAE5AF40093732A /* audioRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = audioRecord.h; sourceTree = "<group>"; };
+		FC898EB11BAE5AF40093732A /* audioRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = audioRecord.m; sourceTree = "<group>"; };
+		FC898EB21BAE5AF40093732A /* audioRecord.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = audioRecord.xib; sourceTree = "<group>"; };
+		FC898EBA1BAE5BDA0093732A /* STPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPopup.h; sourceTree = "<group>"; };
+		FC898EBB1BAE5BDA0093732A /* STPopupController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPopupController.h; sourceTree = "<group>"; };
+		FC898EBC1BAE5BDA0093732A /* STPopupController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPopupController.m; sourceTree = "<group>"; };
+		FC898EBD1BAE5BDA0093732A /* STPopupLeftBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPopupLeftBarItem.h; sourceTree = "<group>"; };
+		FC898EBE1BAE5BDA0093732A /* STPopupLeftBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPopupLeftBarItem.m; sourceTree = "<group>"; };
+		FC898EBF1BAE5BDA0093732A /* STPopupNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPopupNavigationBar.h; sourceTree = "<group>"; };
+		FC898EC01BAE5BDA0093732A /* STPopupNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPopupNavigationBar.m; sourceTree = "<group>"; };
+		FC898EC91BAE5C460093732A /* UIResponder+STPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+STPopup.h"; sourceTree = "<group>"; };
+		FC898ECA1BAE5C460093732A /* UIResponder+STPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+STPopup.m"; sourceTree = "<group>"; };
+		FC898ECB1BAE5C460093732A /* UIViewController+STPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+STPopup.h"; sourceTree = "<group>"; };
+		FC898ECC1BAE5C460093732A /* UIViewController+STPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+STPopup.m"; sourceTree = "<group>"; };
 		FC9545C31BA8A60F008AAF61 /* ChildrenBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChildrenBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC9545C71BA8A60F008AAF61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC9545C81BA8A60F008AAF61 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -195,6 +232,35 @@
 			name = ClipartCanvas;
 			sourceTree = "<group>";
 		};
+		FC898EAF1BAE5ADE0093732A /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				FC898EB71BAE5BA50093732A /* PopUp */,
+				FC898EB01BAE5AF40093732A /* audioRecord.h */,
+				FC898EB11BAE5AF40093732A /* audioRecord.m */,
+				FC898EB21BAE5AF40093732A /* audioRecord.xib */,
+			);
+			name = Audio;
+			sourceTree = "<group>";
+		};
+		FC898EB71BAE5BA50093732A /* PopUp */ = {
+			isa = PBXGroup;
+			children = (
+				FC898EC91BAE5C460093732A /* UIResponder+STPopup.h */,
+				FC898ECA1BAE5C460093732A /* UIResponder+STPopup.m */,
+				FC898ECB1BAE5C460093732A /* UIViewController+STPopup.h */,
+				FC898ECC1BAE5C460093732A /* UIViewController+STPopup.m */,
+				FC898EBA1BAE5BDA0093732A /* STPopup.h */,
+				FC898EBB1BAE5BDA0093732A /* STPopupController.h */,
+				FC898EBC1BAE5BDA0093732A /* STPopupController.m */,
+				FC898EBD1BAE5BDA0093732A /* STPopupLeftBarItem.h */,
+				FC898EBE1BAE5BDA0093732A /* STPopupLeftBarItem.m */,
+				FC898EBF1BAE5BDA0093732A /* STPopupNavigationBar.h */,
+				FC898EC01BAE5BDA0093732A /* STPopupNavigationBar.m */,
+			);
+			name = PopUp;
+			sourceTree = "<group>";
+		};
 		FC9545BA1BA8A60F008AAF61 = {
 			isa = PBXGroup;
 			children = (
@@ -216,6 +282,7 @@
 		FC9545C51BA8A60F008AAF61 /* ChildrenBook */ = {
 			isa = PBXGroup;
 			children = (
+				FC898EAF1BAE5ADE0093732A /* Audio */,
 				709BADD01BAE433D00C9A6E5 /* ClipartCanvas */,
 				709BADCF1BAE433300C9A6E5 /* ThemeCanvas */,
 				FC95469E1BAB9E76008AAF61 /* DRColorPicker */,
@@ -268,12 +335,15 @@
 		FC9545F11BA8B869008AAF61 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				FC898EA91BAE50450093732A /* bookfontstyle.png */,
 				FCBC45781BAE362C00EA7399 /* loginscreen.png */,
 				FCBC45681BAE2C2D00EA7399 /* googlelogin.png */,
 				FCBC456B1BAE2C3900EA7399 /* bluemixlogin.png */,
 				FCBC456E1BAE2C4300EA7399 /* loginbox.png */,
 				FCBC45651BAE261C00EA7399 /* login.png */,
 				FC38BBFE1BAE205A00389785 /* splashscreen.png */,
+				FC898EA61BAE4B900093732A /* startbutton.png */,
+				FC898EAC1BAE56080093732A /* color_line.png */,
 				FC38BBF91BAE203B00389785 /* edit.png */,
 				FC38BBFA1BAE203B00389785 /* new.png */,
 			);
@@ -431,14 +501,18 @@
 				FCBC45041BAE227400EA7399 /* LoginViewController.xib in Resources */,
 				FC38BBFF1BAE205A00389785 /* splashscreen.png in Resources */,
 				709BADDD1BAE435A00C9A6E5 /* ClipartCanvas.xib in Resources */,
+				FC898EAD1BAE56080093732A /* color_line.png in Resources */,
 				709BADD71BAE435100C9A6E5 /* CanvasVC.xib in Resources */,
 				FC38BBFD1BAE203B00389785 /* new.png in Resources */,
 				FC9545F91BA8F631008AAF61 /* SelectThemeViewController.xib in Resources */,
 				FCBC456C1BAE2C3900EA7399 /* bluemixlogin.png in Resources */,
+				FC898EAA1BAE50450093732A /* bookfontstyle.png in Resources */,
 				FC9546C31BAB9E76008AAF61 /* DRColorPicker.bundle in Resources */,
+				FC898EA71BAE4B900093732A /* startbutton.png in Resources */,
 				FC38BBFC1BAE203B00389785 /* edit.png in Resources */,
 				FCBC45661BAE261C00EA7399 /* login.png in Resources */,
 				FC9545D41BA8A60F008AAF61 /* Images.xcassets in Resources */,
+				FC898EB51BAE5AF40093732A /* audioRecord.xib in Resources */,
 				FCBC45691BAE2C2D00EA7399 /* googlelogin.png in Resources */,
 				FCBC45791BAE362C00EA7399 /* loginscreen.png in Resources */,
 				FC9545F01BA8AC75008AAF61 /* HomeViewController.xib in Resources */,
@@ -453,11 +527,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC38BC001BAE205A00389785 /* splashscreen.png in Resources */,
+				FC898EA81BAE4B900093732A /* startbutton.png in Resources */,
+				FC898EAE1BAE56080093732A /* color_line.png in Resources */,
 				FCBC45701BAE2C4300EA7399 /* loginbox.png in Resources */,
 				FCBC45671BAE261C00EA7399 /* login.png in Resources */,
 				FCBC456D1BAE2C3900EA7399 /* bluemixlogin.png in Resources */,
 				FCBC456A1BAE2C2D00EA7399 /* googlelogin.png in Resources */,
+				FC898EB61BAE5AF40093732A /* audioRecord.xib in Resources */,
 				FCBC457A1BAE362C00EA7399 /* loginscreen.png in Resources */,
+				FC898EAB1BAE50450093732A /* bookfontstyle.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,9 +547,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC9546C91BAB9E76008AAF61 /* DRColorPickerGridViewCell.m in Sources */,
+				FC898EB31BAE5AF40093732A /* audioRecord.m in Sources */,
 				FC9546CE1BAB9E76008AAF61 /* DRColorPickerHueView.m in Sources */,
 				FCBC45031BAE227400EA7399 /* LoginViewController.m in Sources */,
 				FC9545F81BA8F631008AAF61 /* SelectThemeViewController.m in Sources */,
+				FC898EC51BAE5BDA0093732A /* STPopupLeftBarItem.m in Sources */,
 				FC9546C61BAB9E76008AAF61 /* DRColorPickerColor.m in Sources */,
 				FC9546C41BAB9E76008AAF61 /* DRColorPicker.m in Sources */,
 				FC9545FE1BAAF16F008AAF61 /* DragableClipart.m in Sources */,
@@ -480,6 +560,8 @@
 				FC9546031BAB0565008AAF61 /* PageCreatorViewController.m in Sources */,
 				FC95460B1BAB85C6008AAF61 /* FontStyleViewController.m in Sources */,
 				FC9546D01BAB9E76008AAF61 /* DRColorPickerStore.m in Sources */,
+				FC898EC31BAE5BDA0093732A /* STPopupController.m in Sources */,
+				FC898ECF1BAE5C460093732A /* UIViewController+STPopup.m in Sources */,
 				FC9546C81BAB9E76008AAF61 /* DRColorPickerGridView.m in Sources */,
 				FC9546CB1BAB9E76008AAF61 /* DRColorPickerHomeView.m in Sources */,
 				709BADD61BAE435100C9A6E5 /* CanvasVC.m in Sources */,
@@ -493,10 +575,12 @@
 				FC9546C21BAB9E76008AAF61 /* DRColorPicker+UIColor.m in Sources */,
 				FC9545CC1BA8A60F008AAF61 /* AppDelegate.m in Sources */,
 				FC9546CA1BAB9E76008AAF61 /* DRColorPickerGridViewController.m in Sources */,
+				FC898ECD1BAE5C460093732A /* UIResponder+STPopup.m in Sources */,
 				FC9545C91BA8A60F008AAF61 /* main.m in Sources */,
 				709BADDC1BAE435A00C9A6E5 /* ClipartCanvas.m in Sources */,
 				FC9546C71BAB9E76008AAF61 /* DRColorPickerColorView.m in Sources */,
 				FC9545EF1BA8AC75008AAF61 /* HomeViewController.m in Sources */,
+				FC898EC71BAE5BDA0093732A /* STPopupNavigationBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,7 +588,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC898EC61BAE5BDA0093732A /* STPopupLeftBarItem.m in Sources */,
+				FC898ED01BAE5C460093732A /* UIViewController+STPopup.m in Sources */,
+				FC898EC41BAE5BDA0093732A /* STPopupController.m in Sources */,
+				FC898ECE1BAE5C460093732A /* UIResponder+STPopup.m in Sources */,
+				FC898EC81BAE5BDA0093732A /* STPopupNavigationBar.m in Sources */,
 				FC9545E31BA8A60F008AAF61 /* ChildrenBookTests.m in Sources */,
+				FC898EB41BAE5AF40093732A /* audioRecord.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "SelectThemeViewController.h"
 
-@interface CanvasVC : UIViewController <UIAlertViewDelegate>
+@interface CanvasVC : UIViewController <UIAlertViewDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 
 @property(nonatomic, strong) UIPopoverController* popoverController;
 @property(nonatomic, strong) SelectThemeViewController* parentController;

@@ -21,6 +21,7 @@
 @property (nonatomic, strong) NSString* selectedFontFamily;
 @property (nonatomic, strong) NSString* selectedFontSize;
 @property (nonatomic, strong) IBOutlet UILabel* sampleLabel;
+@property (nonatomic, strong) IBOutlet UIButton* colorButton;
 @property (nonatomic, strong) DRColorPickerColor* color;
 @property (nonatomic, weak) DRColorPickerViewController* colorPickerVC;
 @property (nonatomic, strong) UIColor* foregroundColor;
@@ -196,6 +197,7 @@
             self.foregroundColor = color.rgbColor;
             [self.sampleLabel setTextColor:self.foregroundColor];
         }
+        [self.colorButton setTitleColor:self.foregroundColor forState:UIControlStateNormal];
     };
     
     // finally, present the color picker
@@ -236,6 +238,11 @@
     UIImage *image = [UIImage imageWithContentsOfFile:path];
     
     [self.imageView setImage:image];
+}
+
+- (IBAction)previousPage:(id)sender
+{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 

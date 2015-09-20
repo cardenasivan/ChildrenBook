@@ -13,6 +13,8 @@
 #import "PathHelper.h"
 #import <AssetsLibrary/AssetsLibrary.h>
 #import "ClipartCanvas.h"
+#import "STPopupController.h"
+#import "audioRecord.h"
 
 @interface PageCreatorViewController ()
 @property (nonatomic, strong) NSMutableArray* dataSource;
@@ -312,9 +314,9 @@
 - (IBAction)createNewImage:(id)sender
 {
     
-    UIBarButtonItem* barButton = (UIBarButtonItem*)sender;
+    UIButton* barButton = (UIButton*)sender;
     
-    ClipartCanvas* clipartCanvas = [[ClipartCanvas alloc] initWithNibName:@"ClipartCanvasVC" bundle:nil];
+    ClipartCanvas* clipartCanvas = [[ClipartCanvas alloc] initWithNibName:@"ClipartCanvas" bundle:nil];
     
     UIPopoverController* popover = [[UIPopoverController alloc] initWithContentViewController:clipartCanvas];
     
@@ -323,9 +325,33 @@
     
     popover.delegate = self;
     
-    popover.popoverContentSize = CGSizeMake(60, 60);
+    popover.popoverContentSize = CGSizeMake(1024, 768);
     
-    [popover presentPopoverFromBarButtonItem:barButton permittedArrowDirections:UIPopoverArrowDirectionLeft animated:YES];
+    [popover presentPopoverFromRect:barButton.frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+}
+
+- (IBAction)recordAudio:(id)sender
+{
+    [STPopupNavigationBar appearance].barTintColor = [UIColor colorWithRed:0.20 green:0.60 blue:0.86 alpha:1.0];
+    [STPopupNavigationBar appearance].tintColor = [UIColor whiteColor];
+    [STPopupNavigationBar appearance].barStyle = UIBarStyleDefault;
+    [STPopupNavigationBar appearance].titleTextAttributes = @{ NSFontAttributeName: [UIFont fontWithName:@"Cochin" size:18],
+                                                               NSForegroundColorAttributeName: [UIColor whiteColor] };
+    
+    [[UIBarButtonItem appearanceWhenContainedIn:[STPopupNavigationBar class], nil] setTitleTextAttributes:@{ NSFontAttributeName:[UIFont fontWithName:@"Cochin" size:17] } forState:UIControlStateNormal];
+    
+    NSString* imageFolder = [self.storyBookPath stringByAppendingPathComponent:self.titleLabel.text];
+    audioRecord* ad = [[audioRecord alloc] initWithPath:imageFolder];
+    
+    [self showPopupWithTransitionStyle:STPopupTransitionStyleSlideVertical rootViewController:ad];
+}
+
+- (void)showPopupWithTransitionStyle:(STPopupTransitionStyle)transitionStyle rootViewController:(UIViewController *)rootViewController
+{
+    STPopupController *popupController = [[STPopupController alloc] initWithRootViewController:rootViewController];
+    popupController.cornerRadius = 4;
+    popupController.transitionStyle = transitionStyle;
+    [popupController presentInViewController:self];
 }
 
 @end

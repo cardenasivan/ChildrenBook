@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "PageCreatorViewController.h"
 
-@interface ClipartCanvas : UIViewController<UIAlertViewDelegate>
+@interface ClipartCanvas : UIViewController<UIAlertViewDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 
 @property(nonatomic, strong) UIPopoverController* clipartPopoverController;
 @property(nonatomic, strong) PageCreatorViewController* clipartParentController;

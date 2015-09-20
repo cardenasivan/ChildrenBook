@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PageCreatorViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDataSource, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@interface PageCreatorViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDataSource, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIPopoverControllerDelegate>
 
 -(void)reloadData;
 
