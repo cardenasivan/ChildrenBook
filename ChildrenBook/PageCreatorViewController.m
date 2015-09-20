@@ -12,6 +12,7 @@
 #import "DragableClipart.h"
 #import "PathHelper.h"
 #import <AssetsLibrary/AssetsLibrary.h>
+#import "ClipartCanvas.h"
 
 @interface PageCreatorViewController ()
 @property (nonatomic, strong) NSMutableArray* dataSource;
@@ -306,6 +307,25 @@
                   failureBlock:nil];
     
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (IBAction)createNewImage:(id)sender
+{
+    
+    UIBarButtonItem* barButton = (UIBarButtonItem*)sender;
+    
+    ClipartCanvas* clipartCanvas = [[ClipartCanvas alloc] initWithNibName:@"ClipartCanvasVC" bundle:nil];
+    
+    UIPopoverController* popover = [[UIPopoverController alloc] initWithContentViewController:clipartCanvas];
+    
+    clipartCanvas.clipartPopoverController = popover;
+    clipartCanvas.clipartParentController = self;
+    
+    popover.delegate = self;
+    
+    popover.popoverContentSize = CGSizeMake(60, 60);
+    
+    [popover presentPopoverFromBarButtonItem:barButton permittedArrowDirections:UIPopoverArrowDirectionLeft animated:YES];
 }
 
 @end

@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SelectThemeViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@interface SelectThemeViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIPopoverControllerDelegate>
+
+-(void)reloadData;
 
 @end

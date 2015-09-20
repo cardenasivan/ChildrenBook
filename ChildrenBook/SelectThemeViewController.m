@@ -13,6 +13,7 @@
 #import "PageCreatorViewController.h"
 #import "PathHelper.h"
 #import "FontStyleViewController.h"
+#import "CanvasVC.h"
 
 @interface SelectThemeViewController ()
 @property (nonatomic, strong) IBOutlet UITableView* tableView;
@@ -204,6 +205,24 @@
     
     [self.navigationController pushViewController:fontSytle animated:YES];
     
+}
+
+- (IBAction)createTheme:(id)sender
+{
+    UIBarButtonItem* barButton = (UIBarButtonItem*)sender;
+    
+    CanvasVC* canvas = [[CanvasVC alloc] initWithNibName:@"CanvasVC" bundle:nil];
+    
+    UIPopoverController* popover = [[UIPopoverController alloc] initWithContentViewController:canvas];
+    
+    canvas.popoverController = popover;
+    canvas.parentController = self;
+    
+    popover.delegate = self;
+    
+    popover.popoverContentSize = CGSizeMake(1024, 768);
+    
+    [popover presentPopoverFromBarButtonItem:barButton permittedArrowDirections:UIPopoverArrowDirectionLeft animated:YES];
 }
 
 @end

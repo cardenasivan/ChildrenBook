@@ -33,9 +33,9 @@
                             </connections>
                         </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="4oK-ct-Gse"/>
-                        <barButtonItem title="Font Style" id="9ZJ-km-dJP">
+                        <barButtonItem title="Create New" id="9ZJ-km-dJP">
                             <connections>
-                                <action selector="finishedTheme:" destination="-1" id="8Kh-iK-2Kf"/>
+                                <action selector="createTheme:" destination="-1" id="ARO-2K-bkM"/>
                             </connections>
                         </barButtonItem>
                     </items>

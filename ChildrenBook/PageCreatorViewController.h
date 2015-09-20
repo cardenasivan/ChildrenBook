@@ -10,4 +10,6 @@
 
 @interface PageCreatorViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDataSource, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
+-(void)reloadData;
+
 @end

@@ -45,6 +45,9 @@
                     <state key="normal" title="Create new">
                         <color key="titleColor" red="0.25569610739999998" green="0.62277871080000002" blue="0.8344726562" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
+                    <connections>
+                        <action selector="createNewImage:" destination="-1" eventType="touchUpInside" id="2oH-du-KG7"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="opb-JB-91w">
                     <rect key="frame" x="928" y="681" width="88" height="30"/>

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		709BADD61BAE435100C9A6E5 /* CanvasVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 709BADD21BAE435100C9A6E5 /* CanvasVC.m */; settings = {ASSET_TAGS = (); }; };
+		709BADD71BAE435100C9A6E5 /* CanvasVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 709BADD31BAE435100C9A6E5 /* CanvasVC.xib */; settings = {ASSET_TAGS = (); }; };
+		709BADD81BAE435100C9A6E5 /* SmoothedBIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 709BADD51BAE435100C9A6E5 /* SmoothedBIView.m */; settings = {ASSET_TAGS = (); }; };
+		709BADDC1BAE435A00C9A6E5 /* ClipartCanvas.m in Sources */ = {isa = PBXBuildFile; fileRef = 709BADDA1BAE435A00C9A6E5 /* ClipartCanvas.m */; settings = {ASSET_TAGS = (); }; };
+		709BADDD1BAE435A00C9A6E5 /* ClipartCanvas.xib in Resources */ = {isa = PBXBuildFile; fileRef = 709BADDB1BAE435A00C9A6E5 /* ClipartCanvas.xib */; settings = {ASSET_TAGS = (); }; };
 		FC38BBFC1BAE203B00389785 /* edit.png in Resources */ = {isa = PBXBuildFile; fileRef = FC38BBF91BAE203B00389785 /* edit.png */; settings = {ASSET_TAGS = (); }; };
 		FC38BBFD1BAE203B00389785 /* new.png in Resources */ = {isa = PBXBuildFile; fileRef = FC38BBFA1BAE203B00389785 /* new.png */; settings = {ASSET_TAGS = (); }; };
 		FC38BBFF1BAE205A00389785 /* splashscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = FC38BBFE1BAE205A00389785 /* splashscreen.png */; settings = {ASSET_TAGS = (); }; };
@@ -68,6 +73,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		709BADD11BAE435100C9A6E5 /* CanvasVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanvasVC.h; sourceTree = "<group>"; };
+		709BADD21BAE435100C9A6E5 /* CanvasVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanvasVC.m; sourceTree = "<group>"; };
+		709BADD31BAE435100C9A6E5 /* CanvasVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CanvasVC.xib; sourceTree = "<group>"; };
+		709BADD41BAE435100C9A6E5 /* SmoothedBIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmoothedBIView.h; sourceTree = "<group>"; };
+		709BADD51BAE435100C9A6E5 /* SmoothedBIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmoothedBIView.m; sourceTree = "<group>"; };
+		709BADD91BAE435A00C9A6E5 /* ClipartCanvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClipartCanvas.h; sourceTree = "<group>"; };
+		709BADDA1BAE435A00C9A6E5 /* ClipartCanvas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClipartCanvas.m; sourceTree = "<group>"; };
+		709BADDB1BAE435A00C9A6E5 /* ClipartCanvas.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClipartCanvas.xib; sourceTree = "<group>"; };
 		FC38BBF91BAE203B00389785 /* edit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edit.png; sourceTree = "<group>"; };
 		FC38BBFA1BAE203B00389785 /* new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = new.png; sourceTree = "<group>"; };
 		FC38BBFE1BAE205A00389785 /* splashscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splashscreen.png; sourceTree = "<group>"; };
@@ -160,6 +173,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		709BADCF1BAE433300C9A6E5 /* ThemeCanvas */ = {
+			isa = PBXGroup;
+			children = (
+				709BADD11BAE435100C9A6E5 /* CanvasVC.h */,
+				709BADD21BAE435100C9A6E5 /* CanvasVC.m */,
+				709BADD31BAE435100C9A6E5 /* CanvasVC.xib */,
+				709BADD41BAE435100C9A6E5 /* SmoothedBIView.h */,
+				709BADD51BAE435100C9A6E5 /* SmoothedBIView.m */,
+			);
+			name = ThemeCanvas;
+			sourceTree = "<group>";
+		};
+		709BADD01BAE433D00C9A6E5 /* ClipartCanvas */ = {
+			isa = PBXGroup;
+			children = (
+				709BADD91BAE435A00C9A6E5 /* ClipartCanvas.h */,
+				709BADDA1BAE435A00C9A6E5 /* ClipartCanvas.m */,
+				709BADDB1BAE435A00C9A6E5 /* ClipartCanvas.xib */,
+			);
+			name = ClipartCanvas;
+			sourceTree = "<group>";
+		};
 		FC9545BA1BA8A60F008AAF61 = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +216,8 @@
 		FC9545C51BA8A60F008AAF61 /* ChildrenBook */ = {
 			isa = PBXGroup;
 			children = (
+				709BADD01BAE433D00C9A6E5 /* ClipartCanvas */,
+				709BADCF1BAE433300C9A6E5 /* ThemeCanvas */,
 				FC95469E1BAB9E76008AAF61 /* DRColorPicker */,
 				FC9545FF1BAAF178008AAF61 /* Control SubClass */,
 				FC9545FA1BA8F652008AAF61 /* Create */,
@@ -393,6 +430,8 @@
 			files = (
 				FCBC45041BAE227400EA7399 /* LoginViewController.xib in Resources */,
 				FC38BBFF1BAE205A00389785 /* splashscreen.png in Resources */,
+				709BADDD1BAE435A00C9A6E5 /* ClipartCanvas.xib in Resources */,
+				709BADD71BAE435100C9A6E5 /* CanvasVC.xib in Resources */,
 				FC38BBFD1BAE203B00389785 /* new.png in Resources */,
 				FC9545F91BA8F631008AAF61 /* SelectThemeViewController.xib in Resources */,
 				FCBC456C1BAE2C3900EA7399 /* bluemixlogin.png in Resources */,
@@ -443,16 +482,19 @@
 				FC9546D01BAB9E76008AAF61 /* DRColorPickerStore.m in Sources */,
 				FC9546C81BAB9E76008AAF61 /* DRColorPickerGridView.m in Sources */,
 				FC9546CB1BAB9E76008AAF61 /* DRColorPickerHomeView.m in Sources */,
+				709BADD61BAE435100C9A6E5 /* CanvasVC.m in Sources */,
 				FC9546CC1BAB9E76008AAF61 /* DRColorPickerHomeViewController.m in Sources */,
 				FC9546D11BAB9E76008AAF61 /* DRColorPickerViewController.m in Sources */,
 				FC9546071BAB5CBB008AAF61 /* PathHelper.m in Sources */,
 				FC9546C51BAB9E76008AAF61 /* DRColorPickerBaseViewController.m in Sources */,
 				FC9546D31BAB9E76008AAF61 /* DRColorPickerWheelViewController.m in Sources */,
+				709BADD81BAE435100C9A6E5 /* SmoothedBIView.m in Sources */,
 				FC9546CF1BAB9E76008AAF61 /* DRColorPickerHueViewController.m in Sources */,
 				FC9546C21BAB9E76008AAF61 /* DRColorPicker+UIColor.m in Sources */,
 				FC9545CC1BA8A60F008AAF61 /* AppDelegate.m in Sources */,
 				FC9546CA1BAB9E76008AAF61 /* DRColorPickerGridViewController.m in Sources */,
 				FC9545C91BA8A60F008AAF61 /* main.m in Sources */,
+				709BADDC1BAE435A00C9A6E5 /* ClipartCanvas.m in Sources */,
 				FC9546C71BAB9E76008AAF61 /* DRColorPickerColorView.m in Sources */,
 				FC9545EF1BA8AC75008AAF61 /* HomeViewController.m in Sources */,
 			);
