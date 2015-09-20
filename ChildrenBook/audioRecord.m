@@ -84,7 +84,8 @@ int secondsLeft;
     [_recorder prepareToRecord];
 }
 
-- (IBAction)recordBtn_press:(id)sender {
+- (IBAction)recordBtn_press:(id)sender
+{
     [_recorder record];
     [self countdownTimer];
 }

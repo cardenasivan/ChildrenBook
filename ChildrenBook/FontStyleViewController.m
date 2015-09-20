@@ -29,7 +29,7 @@
 @end
 
 @implementation FontStyleViewController
-
+@synthesize fontList, selectedFontFamily, selectedFontSize, sampleLabel, colorButton, color, colorPickerVC, foregroundColor, imageView;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -184,17 +184,17 @@
     };
     
     // a color was selected, do something with it, but do NOT dismiss the color picker, that happens in the dismissBlock
-    vc.rootViewController.colorSelectedBlock = ^(DRColorPickerColor* color, DRColorPickerBaseViewController* vc)
+    vc.rootViewController.colorSelectedBlock = ^(DRColorPickerColor* aColor, DRColorPickerBaseViewController* vc)
     {
-        self.color = color;
+        self.color = aColor;
         if (color.rgbColor == nil)
         {
-            self.foregroundColor = [UIColor colorWithPatternImage:color.image];
+            self.foregroundColor = [UIColor colorWithPatternImage:aColor.image];
             [self.sampleLabel setTextColor:self.foregroundColor];
         }
         else
         {
-            self.foregroundColor = color.rgbColor;
+            self.foregroundColor = aColor.rgbColor;
             [self.sampleLabel setTextColor:self.foregroundColor];
         }
         [self.colorButton setTitleColor:self.foregroundColor forState:UIControlStateNormal];

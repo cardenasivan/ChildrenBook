@@ -8,6 +8,7 @@
 
 #import "SelectStoryViewController.h"
 #import "PathHelper.h"
+#import "BookPreviewViewController.h"
 
 @interface SelectStoryViewController ()
 @property (nonatomic, strong) NSMutableArray* dataSource;
@@ -15,6 +16,7 @@
 @end
 
 @implementation SelectStoryViewController
+@synthesize dataSource, tableView;
 
 - (void)viewDidLoad
 {
@@ -23,7 +25,10 @@
     [self reloadData];
     // Do any additional setup after loading the view from its nib.
 }
-
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
+{
+    return [UIView new];
+}
 - (void)reloadData
 {
     NSArray* dirs = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:[PathHelper getStoryboardLocation]
@@ -52,11 +57,11 @@
     return self.dataSource.count;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (UITableViewCell *)tableView:(UITableView *)aTableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSString *cellIdentifier = [NSString stringWithFormat:@"cell%ld",(long)indexPath.row];
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    UITableViewCell *cell = [aTableView dequeueReusableCellWithIdentifier:cellIdentifier];
     
     if (cell == nil)
     {
@@ -67,6 +72,22 @@
     cell.textLabel.text = [self.dataSource objectAtIndex:indexPath.row];
     
     return cell;
+}
+
+- (BOOL)tableView:(UITableView *)tableView shouldHighlightRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return YES;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
+{
+    NSString* folder = [self.dataSource objectAtIndex:indexPath.row];
+    BookPreviewViewController* bookPreviewViewController = [[BookPreviewViewController alloc] initWithNibName:@"BookPreviewViewController" bundle:nil];
+    
+    bookPreviewViewController.storyBookPath = [[PathHelper getStoryboardLocation] stringByAppendingPathComponent:folder];
+    
+    [self.navigationController pushViewController:bookPreviewViewController animated:YES];
+    
 }
 
 - (IBAction)previousPage:(id)sender

@@ -32,6 +32,7 @@
 @end
 
 @implementation PageCreatorViewController
+@synthesize dataSource, storyName, storyBookPath, manifestFilePath, collectionView, bookPage, titleLabel, textArea, pageNumber, font, foregroundColor;
 
 - (void)viewDidLoad
 {
@@ -61,9 +62,9 @@
 {
     NSUserDefaults* userDefaults = [NSUserDefaults standardUserDefaults];
     
-    NSString* storyName = [userDefaults valueForKey:kCurrentStoryName];
+    NSString* storyName1 = [userDefaults valueForKey:kCurrentStoryName];
     
-    NSString* backgroundKey = [NSString stringWithFormat:@"%@%@", storyName, kBackgroundKey];
+    NSString* backgroundKey = [NSString stringWithFormat:@"%@%@", storyName1, kBackgroundKey];
     
     NSString* imageName = [userDefaults valueForKey:backgroundKey];
     
@@ -157,9 +158,9 @@
     return self.dataSource.count;
 }
 
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+- (UICollectionViewCell *)collectionView:(UICollectionView *)aCollectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
+    UICollectionViewCell *cell = [aCollectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
     NSString* imageName = [self.dataSource objectAtIndex:indexPath.row];
     NSString* path = [[PathHelper getClipartLocation] stringByAppendingPathComponent:imageName];
     
@@ -357,7 +358,10 @@
 
 - (IBAction)BookFinished:(id)sender
 {
-    HomeViewController* homeViewController = [[HomeViewController alloc] initWithNibName:@"homeViewController" bundle:nil];
+    [self savePage];
+    [self updateManifest];
+
+    HomeViewController* homeViewController = [[HomeViewController alloc] initWithNibName:@"HomeViewController" bundle:nil];
     [self.navigationController pushViewController:homeViewController animated:YES];
 }
 

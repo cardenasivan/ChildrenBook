@@ -23,7 +23,7 @@
 @end
 
 @implementation SelectThemeViewController
-
+@synthesize tableView, dataSource, imageView, selectedImageName;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -78,11 +78,11 @@
     return self.dataSource.count;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (UITableViewCell *)tableView:(UITableView *)aTableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSString *cellIdentifier = [NSString stringWithFormat:@"cell%ld",(long)indexPath.row];
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    UITableViewCell *cell = [aTableView dequeueReusableCellWithIdentifier:cellIdentifier];
     
     if (cell == nil)
     {

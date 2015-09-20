@@ -83,6 +83,8 @@
 		FCBC45701BAE2C4300EA7399 /* loginbox.png in Resources */ = {isa = PBXBuildFile; fileRef = FCBC456E1BAE2C4300EA7399 /* loginbox.png */; settings = {ASSET_TAGS = (); }; };
 		FCBC45791BAE362C00EA7399 /* loginscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = FCBC45781BAE362C00EA7399 /* loginscreen.png */; settings = {ASSET_TAGS = (); }; };
 		FCBC457A1BAE362C00EA7399 /* loginscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = FCBC45781BAE362C00EA7399 /* loginscreen.png */; settings = {ASSET_TAGS = (); }; };
+		FCEB36D81BAE767600F85AFB /* BookPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCEB36D61BAE767600F85AFB /* BookPreviewViewController.m */; settings = {ASSET_TAGS = (); }; };
+		FCEB36D91BAE767600F85AFB /* BookPreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCEB36D71BAE767600F85AFB /* BookPreviewViewController.xib */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -197,6 +199,9 @@
 		FCBC456B1BAE2C3900EA7399 /* bluemixlogin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bluemixlogin.png; sourceTree = "<group>"; };
 		FCBC456E1BAE2C4300EA7399 /* loginbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginbox.png; sourceTree = "<group>"; };
 		FCBC45781BAE362C00EA7399 /* loginscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginscreen.png; sourceTree = "<group>"; };
+		FCEB36D51BAE767600F85AFB /* BookPreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookPreviewViewController.h; sourceTree = "<group>"; };
+		FCEB36D61BAE767600F85AFB /* BookPreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookPreviewViewController.m; sourceTree = "<group>"; };
+		FCEB36D71BAE767600F85AFB /* BookPreviewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookPreviewViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -311,6 +316,9 @@
 				FC898ED61BAE6AAE0093732A /* SelectStoryViewController.h */,
 				FC898ED71BAE6AAE0093732A /* SelectStoryViewController.m */,
 				FC898ED81BAE6AAE0093732A /* SelectStoryViewController.xib */,
+				FCEB36D51BAE767600F85AFB /* BookPreviewViewController.h */,
+				FCEB36D61BAE767600F85AFB /* BookPreviewViewController.m */,
+				FCEB36D71BAE767600F85AFB /* BookPreviewViewController.xib */,
 			);
 			path = ChildrenBook;
 			sourceTree = "<group>";
@@ -527,6 +535,7 @@
 				FC898EB51BAE5AF40093732A /* audioRecord.xib in Resources */,
 				FCBC45691BAE2C2D00EA7399 /* googlelogin.png in Resources */,
 				FCBC45791BAE362C00EA7399 /* loginscreen.png in Resources */,
+				FCEB36D91BAE767600F85AFB /* BookPreviewViewController.xib in Resources */,
 				FC9545F01BA8AC75008AAF61 /* HomeViewController.xib in Resources */,
 				FC898EDA1BAE6AAE0093732A /* SelectStoryViewController.xib in Resources */,
 				FCBC456F1BAE2C4300EA7399 /* loginbox.png in Resources */,
@@ -561,6 +570,7 @@
 			files = (
 				FC9546C91BAB9E76008AAF61 /* DRColorPickerGridViewCell.m in Sources */,
 				FC898EB31BAE5AF40093732A /* audioRecord.m in Sources */,
+				FCEB36D81BAE767600F85AFB /* BookPreviewViewController.m in Sources */,
 				FC9546CE1BAB9E76008AAF61 /* DRColorPickerHueView.m in Sources */,
 				FCBC45031BAE227400EA7399 /* LoginViewController.m in Sources */,
 				FC9545F81BA8F631008AAF61 /* SelectThemeViewController.m in Sources */,

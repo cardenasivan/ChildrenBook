@@ -65,6 +65,9 @@
                     <state key="normal" title="Finish">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="BookFinished:" destination="-1" eventType="touchUpInside" id="3Xi-OB-dHd"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Create your page" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dMp-d4-8Cp">
                     <rect key="frame" x="342" y="8" width="340" height="49"/>
