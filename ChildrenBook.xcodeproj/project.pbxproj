@@ -308,6 +308,7 @@
 		FC9545C61BA8A60F008AAF61 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FC9545F11BA8B869008AAF61 /* Images */,
 				FC9545C71BA8A60F008AAF61 /* Info.plist */,
 				FC9545C81BA8A60F008AAF61 /* main.m */,
 			);
@@ -326,7 +327,6 @@
 		FC9545E01BA8A60F008AAF61 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				FC9545F11BA8B869008AAF61 /* Images */,
 				FC9545E11BA8A60F008AAF61 /* Info.plist */,
 			);
 			name = "Supporting Files";
