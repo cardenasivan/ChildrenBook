@@ -89,6 +89,21 @@
         
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
+    if(indexPath.row == 0)
+    {
+        [tableView selectRowAtIndexPath:indexPath
+                               animated:NO
+                         scrollPosition:UITableViewScrollPositionMiddle];
+        NSString* imageName = [self.dataSource objectAtIndex:indexPath.row];
+        
+        self.selectedImageName = imageName;
+        
+        NSString* path = [[PathHelper getThemeBackgroundLocation] stringByAppendingPathComponent:imageName];
+        
+        UIImage *image = [UIImage imageWithContentsOfFile:path];
+        
+        [self.imageView setImage:image];
+    }
     
     cell.textLabel.text = [self.dataSource objectAtIndex:indexPath.row];
     
